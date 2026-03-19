@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="keywords" content="Specer, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Specer | Template</title>
+    <title>Joueurs&XXX | Compétition d'échecs</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
@@ -52,14 +52,15 @@
                 <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
+        <!-- commentaire de test -->
         <ul class="main-menu mobile-menu">
             <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./fiches-detaillees.html">Joueurs & XXX</a>
+            <li><a href="./classement-joueurs.html">Joueurs & XXX</a>
                 <ul class="dropdown">
                     <li><a href="fiches-detaillees.html#joueurs">Joueurs</a></li>
-                    <li><a href="fiches-detaillees.html#XXX">XX</a></li>
+                    <li><a href="fiches-detaillees.html#XXX">XXX</a></li>
                 </ul>
-            </li>
+            </li>           
             <li><a href="./club.html">Club</a></li>
             <li><a href="./schedule.html">Schedule</a></li>
             <li><a href="./result.html">Results</a></li>
@@ -116,13 +117,13 @@
                         <div class="nav-menu">
                             <ul class="main-menu">
                                 <li><a href="./index.html">Home</a></li>
-                                <li><a href="./fiches-detaillees.html">Joueurs & XXX</a>
+                                <li class="active"><a href="./fiches-detaillees.html">Joueurs & XXX</a>
                                     <ul class="dropdown">
                                         <li><a href="fiches-detaillees.html#joueurs">Joueurs</a></li>
-                                        <li><a href="fiches-detaillees.html#XXX">XX</a></li>
+                                        <li><a href="fiches-detaillees.html#XXX">XXX</a></li>
                                     </ul>
-                                </li>
-                                <li class="active"><a href="./club.html">Club</a></li>
+                                </li>  
+                                <li><a href="./club.html">Club</a></li>
                                 <li><a href="./schedule.html">Schedule</a></li>
                                 <li><a href="./result.html">Results</a></li>
                                 <li><a href="#">Sport</a></li>
@@ -150,196 +151,68 @@
     </header>
     <!-- Header End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="bs-text">
-                        <h2>Club</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcrumb Section End -->
+    <!-- Section joueurs -->
+    <section id="joueurs" class="section-joueurs">
+        <div class="conteneur">
+            <input type="checkbox" id="toggle-joueurs" class="toggle-checkbox" />
+            <label for="toggle-joueurs" class="titre-section">Les joueurs ▼</label>
+            <div class="grille-joueurs">
 
-    <!-- Club Section Begin -->
-    <section class="club-section spad">
-        <div class="container">
-            <div class="club-content">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="cc-pic">
-                            <img src="img/club-logo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cc-text">
-                            <div class="ct-title">
-                                <h3>Club Brazil</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum. </p>
-                            </div>
-                            <div class="ct-widget">
-                                <ul>
-                                    <li>
-                                        <h5>Established</h5>
-                                        <p>Since 1987</p>
-                                    </li>
-                                    <li>
-                                        <h5>Former President</h5>
-                                        <p>John Martin</p>
-                                    </li>
-                                    <li>
-                                        <h5>A skipper</h5>
-                                        <p>Jack Hadison</p>
-                                    </li>
-                                    <li>
-                                        <h5>Total Matches</h5>
-                                        <p>78</p>
-                                    </li>
-                                    <li>
-                                        <h5>Location</h5>
-                                        <p>Brasilia, Brazil</p>
-                                    </li>
-                                    <li>
-                                        <h5>Social</h5>
-                                        <div class="cw-social">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                                            <a href="#"><i class="fa fa-google"></i></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Carte joueur -->
+                <div class="carte-joueur">
+                    <img src="img/joueurs/magnus-carlsen.jpeg" alt="Magnus Carlsen">
+                    <h3>Magnus Carlsen</h3>
+                    <p class="pays">Norvège</p>
+                    <a href="joueur-carlsen.html" class="bouton-profil">Voir profil</a>
                 </div>
-            </div>
-            <div class="club-tab-list">
-                <div class="row">
-                    <div class="col-lg-8 m-auto">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Substitute</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Midfielder</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Forward</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Goalkeeper</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Sweeper</a>
-                            </li>
-                        </ul><!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                <div class="club-tab-content">
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-1.jpg" alt="">
-                                            <h5>12. Buddy Peck</h5>
-                                        </div>
-                                        <div class="ci-name">Forward</div>
-                                    </div>
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-2.jpg" alt="">
-                                            <h5>08. John Smith</h5>
-                                        </div>
-                                        <div class="ci-name">Defensive midfielder</div>
-                                    </div>
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-3.jpg" alt="">
-                                            <h5>18. Hanry Edison</h5>
-                                        </div>
-                                        <div class="ci-name">Goalkeeper </div>
-                                    </div>
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-4.jpg" alt="">
-                                            <h5>02. Frankie Diaz</h5>
-                                        </div>
-                                        <div class="ci-name">Central defender</div>
-                                    </div>
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-5.jpg" alt="">
-                                            <h5>09. John Thompson</h5>
-                                        </div>
-                                        <div class="ci-name">Central midfielder</div>
-                                    </div>
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-6.jpg" alt="">
-                                            <h5>22. Sara Mayer</h5>
-                                        </div>
-                                        <div class="ci-name">Defendef</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                <div class="club-tab-content">
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-5.jpg" alt="">
-                                            <h5>09. John Thompson</h5>
-                                        </div>
-                                        <div class="ci-name">Central midfielder</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                <div class="club-tab-content">
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-1.jpg" alt="">
-                                            <h5>12. Buddy Peck</h5>
-                                        </div>
-                                        <div class="ci-name">Forward</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-4" role="tabpanel">
-                                <div class="club-tab-content">
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-3.jpg" alt="">
-                                            <h5>18. Hanry Edison</h5>
-                                        </div>
-                                        <div class="ci-name">Goalkeeper </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-5" role="tabpanel">
-                                <div class="club-tab-content">
-                                    <div class="ct-item">
-                                        <div class="ci-text">
-                                            <img src="img/club/p-1.jpg" alt="">
-                                            <h5>12. Buddy Peck</h5>
-                                        </div>
-                                        <div class="ci-name">Forward</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="carte-joueur">
+                    <img src="img/joueurs/fabiano-caruana.jpg" alt="Fabiano Caruana">
+                    <h3>Fabiano Caruana</h3>
+                    <p class="pays">Etats-Unis</p>
+                    <a href="#" class="bouton-profil">Voir profil</a>
                 </div>
+
+                <div class="carte-joueur">
+                    <img src="img/joueurs/hikaru-nakamura.jpeg" alt="Hikaru Nakamura">
+                    <h3>Hikaru Nakamura</h3>
+                    <p class="pays">Etats-Unis</p>
+                    <a href="#" class="bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="carte-joueur">
+                    <img src="img/joueurs/vincent-keymer.jpeg" alt="Vincent Keymer">
+                    <h3>Vincent Keymer</h3>
+                    <p class="pays">Allemagne</p>
+                    <a href="#" class="bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="carte-joueur">
+                    <img src="img/joueurs/nodirbek-abdusattorov.jpeg" alt="Nodirbek Abdusattorov">
+                    <h3>Nodirbek Abdusattorov</h3>
+                    <p class="pays">Ouzbékistan</p>
+                    <a href="#" class="bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="carte-joueur">
+                    <img src="img/joueurs/alireza-firouzja.jpg" alt="Alireza Firouzja">
+                    <h3>Alireza Firouzja</h3>
+                    <p class="pays">France</p>
+                    <a href="#" class="bouton-profil">Voir profil</a>
+                </div>
+
             </div>
+            <p>Retrouver la liste complète des joueurs ci-dessus:</p>
         </div>
     </section>
-    <!-- Club Section End -->
+
+
+    <!--Section équipes/classement/....-->
+    <section id="XXX">
+        <h2>XXX</h2>
+        <p>rhfmsbgmrbh</p>
+    </section>
+
 
     <!-- Footer Section Begin -->
     <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">

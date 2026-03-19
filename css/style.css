@@ -2680,3 +2680,110 @@ ol {
 		height: 410px;
 	}
 }
+
+/* SECTION */
+.section-joueurs {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.titre-section {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* cacher la checkbox */
+.toggle-checkbox {
+  display: none;
+}
+
+/* grille cachée par défaut */
+.grille-joueurs {
+  display: none;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* afficher la grille quand la checkbox est cochée */
+.toggle-checkbox:checked + label + .grille-joueurs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* design du label pour que ça ressemble à ton h2 */
+label.titre-section {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    padding: 15px 25px;         /* espace autour du texte */
+    background-color: #ffeded;  /* couleur douce pour faire ressortir */
+    border: 2px solid #ff3b3b;  /* contour rouge */
+    border-radius: 12px;        /* coins arrondis */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+label.titre-section:hover {
+    background-color: #ff3b3b;   /* change le fond au hover */
+    color: white;                 /* texte blanc au hover */
+    transform: translateY(-3px);  /* petit effet 3D */
+}
+
+/* CARTE */
+.carte-joueur {
+    width: 220px;           
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px; 
+    /* margin supprimé */
+}
+
+/* IMAGE */
+.carte-joueur img {
+    width: 100%;
+    height: 250px;        /* hauteur fixe */
+    object-fit: cover;    /* image centrée et recadrée si nécessaire */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* NOM */
+.carte-joueur h3 {
+    margin: 10px 0 5px;
+}
+
+/* PAYS */
+.pays {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* BOUTON */
+.bouton-profil {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ff3b3b;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: auto; /* pousse le bouton tout en bas de la carte */
+}
+
+.bouton-profil:hover {
+    background: #cc2f2f;
+}
+
+/* HOVER */
+.carte-joueur:hover {
+    transform: translateY(-5px);
+}
