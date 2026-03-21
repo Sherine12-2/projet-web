@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
 </head>
 
@@ -152,81 +153,88 @@
     </header>
     <!-- Header End -->
 
-    <section id="joueurs" class="fd-section-joueurs">
-        <div class="fd-conteneur">
+    <!-- Fiche joueur Abdusattorov -->
+    <section class="fd-fiche-joueur">
 
-            <input type="checkbox" id="toggle-joueurs" class="fd-toggle-checkbox" />
+        <div class="fd-container-fiche">
 
-            <label for="toggle-joueurs" class="fd-titre-section">
-                Les joueurs ▼
-            </label>
+            <div class="fd-col-gauche">
+                <img src="img/joueurs/nodirbek-abdusattorov.jpeg" alt="Nodirbek Abdusattorov">
 
-            <div class="fd-grille-joueurs">
+                <h2>Nodirbek Abdusattorov</h2>
+                <p class="fd-pays"><span class="fi fi-uz"></span> Ouzbékistan</p>
 
-                <!-- Carte joueur -->
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/magnus-carlsen.jpeg" alt="Magnus Carlsen">
-                    <h3>Magnus Carlsen</h3>
-                    <p class="fd-pays"><span class="fi fi-no"></span> Norvège</p>
-                    <p class="fd-fide">FIDE ID : 1503014</p>
-                    <a href="fj-magnuscarlsen.html" class="fd-bouton-profil">Voir profil</a>
+                <!-- INFOS -->
+                <ul class="fd-infos">
+                    <li><strong>FIDE ID :</strong> 14204118</li>
+                    <li><strong>Date de naissance :</strong> 18 septembre 2004</li>
+                    <li><strong>Classement mondial :</strong> #5</li>
+                </ul>
+
+                <!-- RATINGS -->
+                <div class="fd-ratings">
+                    <div class="fd-rating">
+                        <span><i class="bi bi-trophy-fill"></i> Standard</span>
+                        <strong>2771</strong>
+                    </div>
+                    <div class="fd-rating">
+                        <span><i class="bi bi-clock-fill"></i> Rapid</span>
+                        <strong>2703</strong>
+                    </div>
+                    <div class="fd-rating">
+                        <span><i class="bi bi-lightning-fill"></i> Blitz</span>
+                        <strong>2785</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE -->
+            <div class="fd-col-droite">
+
+                <!-- RANKINGS -->
+                <div class="fd-ranking-box">
+                    <h3>Classement mondial</h3>
+                    <p>Joueurs actifs <strong>5</strong></p>
+                    <p>Tous les joueurs <strong>6</strong></p>
                 </div>
 
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/fabiano-caruana.jpg" alt="Fabiano Caruana">
-                    <h3>Fabiano Caruana</h3>
-                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
-                    <p class="fd-fide">FIDE ID : 2020009</p>
-                    <a href="fj-fabianocaruana.html" class="fd-bouton-profil">Voir profil</a>
+                <div class="fd-ranking-box">
+                    <h3>Classement national (UZ)</h3>
+                    <p>Joueurs actifs <strong>1</strong></p>
+                    <p>Tous les joueurs <strong>1</strong></p>
                 </div>
 
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/hikaru-nakamura.jpeg" alt="Hikaru Nakamura">
-                    <h3>Hikaru Nakamura</h3>
-                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
-                    <p class="fd-fide">FIDE ID : 2016192</p>
-                    <a href="fj-hikarunakamura.html" class="fd-bouton-profil">Voir profil</a>
+                <div class="fd-ranking-box">
+                    <h3>Classement continental (Asie)</h3>
+                    <p>Joueurs actifs <strong>1</strong></p>
+                    <p>Tous les joueurs <strong>2</strong></p>
                 </div>
 
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/vincent-keymer.jpeg" alt="Vincent Keymer">
-                    <h3>Vincent Keymer</h3>
-                    <p class="fd-pays"><span class="fi fi-de"></span> Allemagne</p>
-                    <p class="fd-fide">FIDE ID : 12940690</p>
-                    <a href="fj-vincentkeymer.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/nodirbek-abdusattorov.jpeg" alt="Nodirbek Abdusattorov">
-                    <h3>Nodirbek Abdusattorov</h3>
-                    <p class="fd-pays"><span class="fi fi-uz"></span> Ouzbékistan</p>
-                    <p class="fd-fide">FIDE ID : 14204118</p>
-                    <a href="fj-nodirbekabdusattorov.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/alireza-firouzja.jpg" alt="Alireza Firouzja">
-                    <h3>Alireza Firouzja</h3>
-                    <p class="fd-pays"><span class="fi fi-fr"></span> France</p>
-                    <p class="fd-fide">FIDE ID : 12573981</p>
-                    <a href="fj-firouzjaalireza.html" class="fd-bouton-profil">Voir profil</a>
+                <!-- TITRES -->
+                <div class="fd-titres fd-card">
+                    <h3>Titres</h3>
+                    <ul class="fd-liste-titres">
+                        <li>
+                            <span>Grand Maître (GM)</span>
+                            <strong>2018</strong>
+                        </li>
+                        <li>
+                            <span>Maître International (IM)</span>
+                            <strong>2017</strong>
+                        </li>
+                        <li>
+                            <span>Maître FIDE (FM)</span>
+                            <strong>2012</strong>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
 
-            <p class="fd-description">
-                Retrouvez la liste complète des joueurs en cliquant sur le bouton ci-dessus.
-            </p>
-
         </div>
-    </section>
 
-
-    <!--Section équipes/classement/....-->
-    <section id="XXX">
-        <h2>XXX</h2>
-        <p>rhfmsbgmrbh</p>
     </section>
+    
 
 
     <!-- Footer Section Begin -->
