@@ -2168,12 +2168,11 @@ ol {
 	letter-spacing: 1px;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: all 0.3s ease;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-form form button:hover {
 	background: #1a252f;
-	box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Petite ombre portée */
-}
+} 
 
 /*------
 style pour checkbox formulaire
