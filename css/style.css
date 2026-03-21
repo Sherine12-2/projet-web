@@ -2168,6 +2168,34 @@ ol {
 	letter-spacing: 1px;
 }
 
+/*------
+style pour checkbox formulaire
+------*/
+/* On cible spécifiquement la div qui contient la checkbox */
+.group-in.group-checkbox {
+    display: flex;
+    flex-direction: row; /* Force l'alignement horizontal */
+    align-items: center;  /* Centre la case verticalement par rapport au texte */
+    gap: 10px;            /* Espace de 10px entre la case et le texte */
+    margin-top: 15px;
+}
+
+/* On réinitialise la taille de la case à cocher */
+.group-in.group-checkbox input[type="checkbox"] {
+    width: auto;         /* Empêche la case de faire toute la largeur */
+    height: 18px;        /* Donne une taille correcte à la case */
+    width: 18px;
+    margin: 0;           /* Supprime les marges automatiques */
+    cursor: pointer;
+}
+
+/* On ajuste le texte à côté */
+.group-in.group-checkbox label {
+    margin: 0;           /* Enlève les marges qui pourraient décaler le texte */
+    cursor: pointer;
+    font-size: 14px;     /* À ajuster selon le template */
+}
+
 .contact-info h2 {
 	color: #151618;
 	font-weight: 500;
