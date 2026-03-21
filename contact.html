@@ -151,21 +151,38 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <h2>Formulaire de contact</h2>
-                        <form action="#">
+                        <h2>Nous contacter</h2>
+                        <form action="#" method="post">
                             <div class="group-in">
-                                <label for="name">Name</label>
-                                <input type="text" id="name">
+                                <label for="name">Nom</label>
+                                <input type="text" name="name" id="name" placeholder="Votre nom complet" required >
                             </div>
                             <div class="group-in">
                                 <label for="email">Email</label>
-                                <input type="text" id="email">
+                                <input type="email" name="email" id="email" placeholder="exemple@mail.com" required >
+                            </div>
+                            <div class="group-in">
+                                <label for="ticket">Type de billet souhaité</label>
+                                <select name="ticket" id="ticket">
+                                    <option>Veuillez choisir une option</option>
+                                    <option value="day">Pass 1 Jour (Accès simple)</option>
+                                    <option value="vip">Pass VIP (Accès coulisses + Rencontre joueurs)</option>
+                                    <option value="final">Pass Finale uniquement</option>
+                                </select>
+                            </div>
+                            <div class="group-in">
+                                <label for="guests">Nombre de visiteurs</label>
+                                <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+                            </div>
+                            <div class="group-in checkbox-style">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Recevoir les alertes sur les résultats et la remise des prix</label>
                             </div>
                             <div class="group-in">
                                 <label for="message">Message</label>
-                                <textarea id="message"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Comment pouvons-nous vous aider ?"></textarea>
                             </div>
-                            <button type="submit">Submit Now</button>
+                            <button type="submit">Envoyer</button>
                         </form>
                     </div>
                 </div>
