@@ -2161,11 +2161,18 @@ ol {
 	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
-	font-weight: 500;
-	background: #dd1515;
+	font-weight: 600;
+	background: #2c3e50;
 	border: none;
-	padding: 12px 34px 10px 40px;
+	padding: 12px 34px 10px 34px;
 	letter-spacing: 1px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.contact-form form button:hover {
+	background: #1a252f;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Petite ombre portée */
 }
 
 /*------
