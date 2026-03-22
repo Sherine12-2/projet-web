@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Le portail de référence pour l'actualité des échecs mondiaux et le classement des ELO">
+    <meta name="keywords" content="echecs, tournoi, classement, ELO, Magnus Carlsen, actu, stratégie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grand Tournoi d'Échecs International</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="search-btn search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header__top--canvas">
+            <div class="ht-info">
+                <ul>
+                    <li>14:00 - 25Mars 2025</li>
+                    <li><a href="#">Connexion</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ht-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-vimeo"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <ul class="main-menu mobile-menu">
+            <li class="active"><a href="./index.html">Accueil</a></li>
+            <li><a href="./club.html">Club</a></li>
+            <li><a href="./schedule.html">Calendrier</a></li>
+            <li><a href="./result.html">Résultats</a></li>
+            <li><a href="#">Classement</a></li>
+            <li><a href="#">Plus</a>
+                <ul class="dropdown">
+                    <li><a href="./blog.html">Articles</a></li>
+                    <li><a href="./blog-details.html">Détails</a></li>
+                    <li><a href="#">Tournois</a></li>
+                    <li><a href="#">Archives</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ht-info">
+                            <ul>
+                                <li>20:00 - 25 Mars 2025</li>
+                                <li><a href="#">Connexion</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ht-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-vimeo"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./index.html"><img src="img/logo.png" alt="Drapeau Norvège"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <ul class="main-menu">
+                                <li class="active"><a href="./index.html">Acceuil</a></li>
+                                <li><a href="./club.html">Club</a></li>
+                                <li><a href="./schedule.html">Calendrier</a></li>
+                                <li><a href="./result.html">Résultats</a></li>
+                                <li><a href="#">Tactique</a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./blog.html">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="#">Calendrier</a></li>
+                                        <li><a href="#">Résultats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                            <div class="nm-right search-switch">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section set-bg" data-setbg="img/hero/hero-1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hs-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="hs-text">
+                                        <h4>26 Mars 2025 / 15:10</h4>
+                                        <h2>Magnus Carlsen VS Alireza Firouzja</h2>
+                                        <a href="#" class="primary-btn">Plus de détails</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Trending News Section Begin -->
+    <div class="trending-news-section">
+        <div class="container">
+            <div class="tn-title"><i class="fa fa-caret-right"></i>En Direct</div>
+            <div class="news-slider owl-carousel">
+                <div class="nt-item">Le Gambit Dame expliqué par les experts</div>
+                <div class="nt-item">Nakamura remporte le tournoi de blitz</div>
+            </div>
+        </div>
+    </div>
+    <!-- Trending News Section End -->
+
+    <!-- Match Section Begin -->
+    <section class="match-section set-bg" data-setbg="img/match/match-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ms-content">
+                        <h4>Prochains Duels</h4>
+                        <div class="mc-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="left-team">
+                                            <img src="img/match/tf-1.jpg" alt="Portrait de Garry Kasparov">
+                                            <h6>Kasparov</h6>
+                                        </td>
+                                        <td class="mt-content">
+                                            <div class="mc-op">Kasparov vs Karpov</div>
+                                            <h4>VS</h4>
+                                            <div class="mc-op">26 Mars 2025</div>
+                                        </td>
+                                        <td class="right-team">
+                                            <img src="img/match/tf-2.jpg" alt="Portrait d'Anatoly Karpov">
+                                            <h6>Karpov</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mc-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="left-team">
+                                            <img src="img/match/tf-3.jpg" alt="">
+                                            <h6>Anand</h6>
+                                        </td>
+                                        <td class="mt-content">
+                                            <div class="mc-op">Anand vs Kramnik</div>
+                                            <h4>VS</h4>
+                                            <div class="mc-op">26 Mars 2025</div>
+                                        </td>
+                                        <td class="right-team">
+                                            <img src="img/match/tf-4.jpg" alt="">
+                                            <h6>Kramnik</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mc-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="left-team">
+                                            <img src="img/match/tf-5.jpg" alt="">
+                                            <h6>Polgar</h6>
+                                        </td>
+                                        <td class="mt-content">
+                                            <div class="mc-op">Polgar vs Hou Yifan</div>
+                                            <h4>VS</h4>
+                                            <div class="mc-op">25 Mars 2025</div>
+                                        </td>
+                                        <td class="right-team">
+                                            <img src="img/match/tf-6.jpg" alt="">
+                                            <h6>Hou Yifan</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ms-content">
+                        <h4>Dernier Résultat</h4>
+                        <div class="mc-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="left-team">
+                                            <img src="img/match/tf-1.jpg" alt="">
+                                            <h6>Spassky</h6>
+                                        </td>
+                                        <td class="mt-content">
+                                            <div class="mc-op">Spassky vs Fischer</div>
+                                            <h4>0-1</h4>
+                                            <div class="mc-op">24 Mars 2025</div>
+                                        </td>
+                                        <td class="right-team">
+                                            <img src="img/match/tf-2.jpg" alt="">
+                                            <h6>Fischer</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mc-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="left-team">
+                                            <img src="img/match/tf-3.jpg" alt="">
+                                            <h6>Tan</h6>
+                                        </td>
+                                        <td class="mt-content">
+                                            <div class="mc-op">Tan vs Botvinnik</div>
+                                            <h4>1/2-1/2</h4>
+                                            <div class="mc-op">23 Mars 2025</div>
+                                        </td>
+                                        <td class="right-team">
+                                            <img src="img/match/tf-4.jpg" alt="">
+                                            <h6>Botvinnik</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mc-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="left-team">
+                                            <img src="img/match/tf-5.jpg" alt="">
+                                            <h6>Alekhine</h6>
+                                        </td>
+                                        <td class="mt-content">
+                                            <div class="mc-op">Alekhine vs Capablanca</div>
+                                            <h4>1/2-1/2</h4>
+                                            <div class="mc-op">22 Mars 2025</div>
+                                        </td>
+                                        <td class="right-team">
+                                            <img src="img/match/tf-6.jpg" alt="">
+                                            <h6 class="mi-right">Capablanca</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Match Section End -->
+
+    <!-- Chess Section Begin -->
+    <section class="chess-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="section-title">
+                        <h3>Actu <span>Échecs</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="chess-item set-bg" data-setbg="img/chess/chess-1.jpg">
+                        <div class="si-tag">Tournoi</div>
+                        <div class="si-text">
+                            <h5><a href="#">Analyse de la finale Carlsen-Firouzja</a></h5>
+                            <ul>
+                                <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                <li><i class="fa fa-edit"></i> 3 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="chess-item set-bg" data-setbg="img/chess/chess-2.jpg">
+                        <div class="si-tag">Tournoi</div>
+                        <div class="si-text">
+                            <h5><a href="#">Comment préparer ses ouvertures en 2025</a></h5>
+                            <ul>
+                                <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                <li><i class="fa fa-edit"></i> 3 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="chess-item set-bg" data-setbg="img/chess/chess-3.jpg">
+                        <div class="si-tag">Tournoi</div>
+                        <div class="si-text">
+                            <h5><a href="#">Les meilleurs logiciels pour progresser</a></h5>
+                            <ul>
+                                <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                <li><i class="fa fa-edit"></i> 3 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 p-0">
+                    <div class="chess-item set-bg" data-setbg="img/chess/chess-4.jpg">
+                        <div class="si-tag">Tournoi</div>
+                        <div class="si-text">
+                            <h5><a href="#">L'essor des échecs en milieu scolaire</a></h5>
+                            <ul>
+                                <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                <li><i class="fa fa-edit"></i> 3 Comment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chess Section End -->
+
+    <!-- Latest Section Begin -->
+    <section class="latest-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title latest-title">
+                        <h3>Dernières <span>Nouvelles</span></h3>
+                        <ul>
+                            <li>Tous</li>
+                            <li>Tournoi</li>
+                            <li>Grand Chess tour</li>
+                            <li>National</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="news-item left-news">
+                                <div class="ni-pic set-bg" data-setbg="img/news/latest-b.jpg">
+                                    <div class="ni-tag">Chess</div>
+                                </div>
+                                <div class="ni-text">
+                                    <h4><a href="#">Les vérités sur la psychologie des grands maîtres.</a></h4>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 3 Comment</li>
+                                    </ul>
+                                    <p>Découvrez comment les champions gèrent leur pression et leur stress pendant les parties rapides et les blitz de haut niveau.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-item">
+                                <div class="ni-pic">
+                                    <img src="img/news/ln-1.jpg" alt="">
+                                </div>
+                                <div class="ni-text">
+                                    <h5><a href="#">L'impact de l'IA sur la créativité</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 3 Comment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="ni-pic">
+                                    <img src="img/news/ln-2.jpg" alt="">
+                                </div>
+                                <div class="ni-text">
+                                    <h5><a href="#">Les meilleurs livres pour progresser</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 4 Comment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="ni-pic">
+                                    <img src="img/news/ln-3.jpg" alt="">
+                                </div>
+                                <div class="ni-text">
+                                    <h5><a href="#">Pourquoi l'Italienne revient à la mode</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 4 Comment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="ni-pic">
+                                    <img src="img/news/ln-4.jpg" alt="">
+                                </div>
+                                <div class="ni-text">
+                                    <h5><a href="#">Le tournoi des Candidats 2025</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 26 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 3 Comment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="section-title">
+                        <h3>Classement <span>Mondial</span></h3>
+                    </div>
+                    <div class="points-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="th-o">Pos</th>
+                                    <th>Joueur</th>
+                                    <th class="th-o">P</th>
+                                    <th class="th-o">G</th>
+                                    <th class="th-o">P</th>
+                                    <th class="th-o">ELO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-1.jpg" alt="">
+                                        <span>M. Carlsen</span>
+                                    </td>
+                                    <td>22</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>2830</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-2.jpg" alt="">
+                                        <span>F. Caruana</span>
+                                    </td>
+                                    <td>20</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>2804</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-3.jpg" alt="">
+                                        <span>H. Nakamura</span>
+                                    </td>
+                                    <td>18</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>2789</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-4.jpg" alt="">
+                                        <span>Ding Liren</span>
+                                    </td>
+                                    <td>17</td>
+                                    <td>2</td>
+                                    <td>7</td>
+                                    <td>2776</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-5.jpg" alt="">
+                                        <span>A. Firouzja</span>
+                                    </td>
+                                    <td>17</td>
+                                    <td>2</td>
+                                    <td>6</td>
+                                    <td>2760</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-6.jpg" alt="">
+                                        <span>I. Nepomniachtchi</span>
+                                    </td>
+                                    <td>161</td>
+                                    <td>1</td>
+                                    <td>8</td>
+                                    <td>2758</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-7.jpg" alt="">
+                                        <span>Wesley So</span>
+                                    </td>
+                                    <td>15</td>
+                                    <td>4</td>
+                                    <td>8</td>
+                                    <td>2757</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="team-name">
+                                        <img src="img/flag/flag-8.jpg" alt="">
+                                        <span>D. Gukesh</span>
+                                    </td>
+                                    <td>14</td>
+                                    <td>3</td>
+                                    <td>7</td>
+                                    <td>2747</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="p-all">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Section End -->
+
+    <!-- Video Section Begin -->
+    <section class="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Vidéos <span>Populaires</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="video-slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="video-item set-bg" data-setbg="img/videos/video-1.jpg">
+                            <div class="vi-title">
+                                <h5>Apprendre le Mat du Coup du Berger</h5>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img
+                                    src="img/videos/play.png" alt=""></a>
+                            <div class="vi-time">11:13</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="video-item set-bg" data-setbg="img/videos/video-2.jpg">
+                            <div class="vi-title">
+                                <h5>Les 10 plus beaux sacrifices de l'histoire</h5>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img
+                                    src="img/videos/play.png" alt=""></a>
+                            <div class="vi-time">10:13</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="video-item set-bg" data-setbg="img/videos/video-3.jpg">
+                            <div class="vi-title">
+                                <h5>Comment battre une défense Sicilienne</h5>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img
+                                    src="img/videos/play.png" alt=""></a>
+                            <div class="vi-time">15:13</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="video-item set-bg" data-setbg="img/videos/video-4.jpg">
+                            <div class="vi-title">
+                                <h5>Top 5 des erreurs de débutants</h5>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img
+                                    src="img/videos/play.png" alt=""></a>
+                            <div class="vi-time">16:10</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="video-item set-bg" data-setbg="img/videos/video-4.jpg">
+                            <div class="vi-title">
+                                <h5>Stockfish vs. AlphaZero : Le choc des IA</h5>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM" class="play-btn video-popup"><img
+                                    src="img/videos/play.png" alt=""></a>
+                            <div class="vi-time">14:25</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+    <!-- Popular News Section Begin -->
+ <section class="popular-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h3>Articles <span>Populaires</span></h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="news-item popular-item set-bg" data-setbg="img/news/popular-tactique.jpg">
+                                <div class="ni-tag tactique">Tactique</div>
+                                <div class="ni-text">
+                                    <h5><a href="#">Le sacrifice d'attraction : comment forcer le mat en 3 coups</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 27 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 12 Commentaires</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="ni-text">
+                                    <h5><a href="#">Les 5 meilleures ouvertures pour les débutants en 2025</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 20 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 5 Commentaires</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-item popular-item set-bg" data-setbg="img/news/popular-tournoi.jpg">
+                                <div class="ni-tag tactique">Tournoi</div>
+                                <div class="ni-text">
+                                    <h5><a href="#">Candidats 2025 : Qui affrontera Ding Liren pour le titre mondial ?</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 15 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 24 Commentaires</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="ni-text">
+                                    <h5><a href="#">Analyse : Firouzja et la nouvelle génération de prodiges</a></h5>
+                                    <ul>
+                                        <li><i class="fa fa-calendar"></i> 10 Mars 2025</li>
+                                        <li><i class="fa fa-edit"></i> 8 Commentaires</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="section-title">
+                        <h3>Suivez <span>Nous</span></h3>
+                    </div>
+                    <div class="follow-links">
+                        <ul>
+                            <li class="facebook">
+                                <i class="fa fa-facebook"></i>
+                                <div class="fl-name">Facebook</div>
+                                <span class="fl-fan">15k Abonnés</span>
+                            </li>
+                            <li class="twitter">
+                                <i class="fa fa-twitter"></i>
+                                <div class="fl-name">X (Twitter)</div>
+                                <span class="fl-fan">42k Abonnés</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vote-option set-bg" data-setbg="img/news/vote-bg.jpg">
+                        <div class="vo-text">
+                            <h5>Selon vous, qui est le plus grand joueur de l'histoire ?</h5>
+                            <div class="vt-item">
+                                <input type="radio" name="like-team" id="vote-carlsen">
+                                <label for="vote-carlsen">Magnus Carlsen</label>
+                            </div>
+                            <div class="vt-item">
+                                <input type="radio" name="like-team" id="vote-kasparov">
+                                <label for="vote-kasparov">Garry Kasparov</label>
+                            </div>
+                            <div class="vt-item">
+                                <input type="radio" name="like-team" id="vote-fischer">
+                                <label for="vote-fischer">Bobby Fischer</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular News Section End -->
+
+    <!-- Footer Section Begin -->
+   <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="fs-logo">
+                        <div class="logo">
+                            <a href="./index.html"><img src="img/logo.png" alt="Chess News"></a>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-envelope"></i> contact@echecs-passion.be</li>
+                            <li><i class="fa fa-thumb-tack"></i> 12 Rue de l'Échiquier, Bruxelles, Belgique</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 offset-lg-1">
+                    <div class="fs-widget">
+                        <h4>Top Joueurs</h4>
+                        <ul class="fw-links">
+                            <li><a href="#">M. Carlsen</a></li>
+                            <li><a href="#">H. Nakamura</a></li>
+                            <li><a href="#">A. Firouzja</a></li>
+                        </ul>
+                        <ul class="fw-links">
+                            <li><a href="#">F. Caruana</a></li>
+                            <li><a href="#">Ding Liren</a></li>
+                            <li><a href="#">I. Nepomniachtchi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="fs-widget">
+                        <h4>Dernières News</h4>
+                        <div class="fw-item">
+                            <h5><a href="#">Le tournoi de Wijk aan Zee commence fort</a></h5>
+                        </div>
+                        <div class="fw-item">
+                            <h5><a href="#">Nouveaux records sur Chess.com</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="fa fa-close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Rechercher un joueur ou une ouverture...">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
