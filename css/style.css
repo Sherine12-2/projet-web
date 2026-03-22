@@ -2118,7 +2118,8 @@ ol {
 	color: #151618;
 }
 
-.contact-form form .group-in input {
+.contact-form form .group-in input,
+.contact-form form .group-in select {
 	width: 100%;
 	height: 46px;
 	border: 1px solid #d9d9d9;
@@ -2132,7 +2133,8 @@ ol {
 	transition: all 0.3s;
 }
 
-.contact-form form .group-in input:focus {
+.contact-form form .group-in input:focus,
+.contact-form form .group-in select:focus {
 	border-color: #dd1515;
 }
 
@@ -2221,7 +2223,12 @@ style pour checkbox formulaire
 }
 
 .contact-info .ci-address {
-	margin-bottom: 20px;
+	margin-bottom: 45px;
+	padding-bottom: 20px;
+}
+.contact-info .ci-address:not(:last-child) {
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 40px;
 }
 
 .contact-info .ci-address h5 {
@@ -2235,6 +2242,28 @@ style pour checkbox formulaire
 	font-size: 14px;
 	color: #636363;
 	line-height: 30px;
+	/*  pour l'alignement	*/
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	margin-bottom: 10px;
+}
+
+.contact-info .ci-address ul li .icon {
+	min-width: 20px;
+	text-align: center;
+	font-style: normal;
+	display: inline-block;/*permet au span de prendre une largeur*/
+}
+
+.contact-info .ci-address ul li a {
+    color: #636363;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .ci-address ul li a:hover {
+    color: #dd1515;
 }
 
 /*---------------------
