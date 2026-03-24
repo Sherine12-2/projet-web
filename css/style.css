@@ -2265,6 +2265,51 @@ style pour checkbox formulaire
 .contact-info .ci-address ul li a:hover {
     color: #dd1515;
 }
+/* Style pour la section Équipe */
+.team-item {
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s; 
+}
+
+.team-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #f44336; 
+}
+
+.team-text {
+    margin-top: 15px;
+}
+
+.team-text h5 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.team-role {
+    color: #f44336;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-text p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
 
 /*---------------------
   Club Section
