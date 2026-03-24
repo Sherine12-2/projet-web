@@ -2265,7 +2265,7 @@ style pour checkbox formulaire
 .contact-info .ci-address ul li a:hover {
     color: #dd1515;
 }
-/* Style pour la section Équipe */
+/* Style pour la section Équipe (ABOUT & CONTACT) */
 .team-item {
     margin-bottom: 30px;
     text-align: center;
@@ -2309,6 +2309,15 @@ style pour checkbox formulaire
     font-size: 14px;
     color: #666;
     line-height: 1.6;
+}
+/* Style pour les menus déroulants des formulaires */
+.form-select-custom {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: transparent;
 }
 
 /*---------------------
