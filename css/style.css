@@ -2203,12 +2203,43 @@ style pour checkbox formulaire
     cursor: pointer;
     font-size: 14px;     /* À ajuster selon le template */
 }
+
 /*Réduire largeur input nombre visiteurs*/
-.contact-form .group-in input[type="number"] {
+ .contact-form .group-in input[type="number"] {
     width: 100px !important; 
     min-width: 100px !important;
-    display: inline-block; /* Pour éviter qu'il ne cherche à remplir toute la ligne */
+    display: inline-block; /* Pour éviter de remplir toute la ligne */
+} 
+
+.radio-group {
+    display: flex;
+    gap: 30px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Style du bouton rond */
+.radio-item input[type="radio"] {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #f44336;
+}
+
+/* Style du texte à côté du bouton */
+.radio-item label {
+    margin-bottom: 0; /* Annule la marge par défaut des labels */
+    font-weight: 500;
+    cursor: pointer;
+}
+
 
 .contact-info h2 {
 	color: #151618;

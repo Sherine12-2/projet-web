@@ -172,19 +172,32 @@
                                           </div>
                                     </div>
                                     <div class="col-lg-12">
-                                          <div class="group-in">
-                                                <label for="membership">Type de membre</label>
-                                                <select class="form-select-custom" name="membership" id="membership">
-                                                      <option value="visiteur">Visiteur occasionnel</option>
-                                                      <option value="etudiant">Étudiant</option>
-                                                      <option value="professionnel">Professionnel</option>
-                                                </select>
-                                          </div>
+                                        <div class="group-in">
+                                            <label>Votre catégorie</label>
+                                            <div class="radio-group">
+                                                <div class="radio-item">
+                                                    <input type="radio" name="categorie" id="open" value="open" checked>
+                                                    <label for="open">Open</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" name="categorie" id="jeune" value="jeune">
+                                                    <label for="jeune">Jeune (-20 ans)</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="group-in">
                                             <label for="visitor-count">Nombre de visiteurs accompagnants</label>
                                             <input type="number" name="visitor-count" id="visitor-count" min="0" max="10" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="group-in group-checkbox">
+                                            <input type="checkbox" name="terms" id="terms" required>
+                                            <label for="terms">
+                                                J'accepte les <a href="#" style="color: #dd1515; text-decoration: underline;">conditions générales</a> et la politique de confidentialité.
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
