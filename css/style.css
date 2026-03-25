@@ -2265,6 +2265,18 @@ style pour checkbox formulaire
 .contact-info .ci-address ul li a:hover {
     color: #dd1515;
 }
+/* Style pour lien transport */
+.link-stib {
+    color: #ed6b00; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link-stib:hover {
+    color: #b55200;
+    text-decoration: none;
+}
+
 /* Style pour la section Équipe (ABOUT & CONTACT) */
 .team-item {
     margin-bottom: 30px;
