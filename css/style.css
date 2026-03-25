@@ -2118,7 +2118,8 @@ ol {
 	color: #151618;
 }
 
-.contact-form form .group-in input {
+.contact-form form .group-in input,
+.contact-form form .group-in select {
 	width: 100%;
 	height: 46px;
 	border: 1px solid #d9d9d9;
@@ -2132,7 +2133,8 @@ ol {
 	transition: all 0.3s;
 }
 
-.contact-form form .group-in input:focus {
+.contact-form form .group-in input:focus,
+.contact-form form .group-in select:focus {
 	border-color: #dd1515;
 }
 
@@ -2161,12 +2163,83 @@ ol {
 	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
-	font-weight: 500;
-	background: #dd1515;
+	font-weight: 600;
+	background: #2c3e50;
 	border: none;
-	padding: 12px 34px 10px 40px;
+	padding: 12px 34px 10px 34px;
 	letter-spacing: 1px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.contact-form form button:hover {
+	background: #1a252f;
+} 
+
+/*------
+style pour checkbox formulaire
+------*/
+/* On cible spécifiquement la div qui contient la checkbox */
+.group-in.group-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* On réinitialise la taille de la case à cocher */
+.group-in.group-checkbox input[type="checkbox"] {
+    width: auto;
+    height: 18px;
+    width: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* On ajuste le texte à côté */
+.group-in.group-checkbox label {
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*Réduire largeur input nombre visiteurs*/
+ .contact-form .group-in input[type="number"] {
+    width: 100px !important; 
+    min-width: 100px !important;
+    display: inline-block; /* Pour éviter de remplir toute la ligne */
+} 
+
+.radio-group {
+    display: flex;
+    gap: 30px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Style du bouton rond */
+.radio-item input[type="radio"] {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #f44336;
+}
+
+/* Style du texte à côté du bouton */
+.radio-item label {
+    margin-bottom: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 
 .contact-info h2 {
 	color: #151618;
@@ -2181,7 +2254,12 @@ ol {
 }
 
 .contact-info .ci-address {
-	margin-bottom: 20px;
+	margin-bottom: 45px;
+	padding-bottom: 20px;
+}
+.contact-info .ci-address:not(:last-child) {
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 40px;
 }
 
 .contact-info .ci-address h5 {
@@ -2195,6 +2273,91 @@ ol {
 	font-size: 14px;
 	color: #636363;
 	line-height: 30px;
+	/*  pour l'alignement	*/
+	display: flex;
+	align-items: center; /* emoji et texte sur la même ligne*/
+	gap: 12px;
+	margin-bottom: 10px;
+}
+
+.contact-info .ci-address ul li .icon {
+	min-width: 20px;
+	text-align: center;
+	font-style: normal;
+	display: inline-block;/*permet au span de prendre une largeur*/
+}
+
+.contact-info .ci-address ul li a {
+    color: #636363;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .ci-address ul li a:hover {
+    color: #dd1515;
+}
+
+/*Modif contact info*/
+.contact-info .row .col-md-4 {
+    display: flex;
+}
+
+/* Style pour lien transport */
+.link-stib {
+    color: #ed6b00; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link-stib:hover {
+    color: #b55200;
+    text-decoration: none;
+}
+
+/* Style pour la section Équipe (ABOUT & CONTACT) */
+.team-item {
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s; 
+}
+
+.team-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #f44336; 
+}
+
+.team-text {
+    margin-top: 15px;
+}
+
+.team-text h5 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.team-role {
+    color: #f44336;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-text p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
 }
 
 /*---------------------

@@ -7,7 +7,7 @@
     <meta name="keywords" content="Specer, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nous contacter - Compétition d'Échecs 2026</title>
+    <title>S'inscrire</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
@@ -54,12 +54,6 @@
         </div>
         <ul class="main-menu mobile-menu">
             <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./fiches-detaillees.html">Joueurs & XXX</a>
-                <ul class="dropdown">
-                    <li><a href="fiches-detaillees.html#joueurs">Joueurs</a></li>
-                    <li><a href="fiches-detaillees.html#XXX">XX</a></li>
-                </ul>
-            </li>
             <li><a href="./club.html">Club</a></li>
             <li><a href="./schedule.html">Schedule</a></li>
             <li><a href="./result.html">Results</a></li>
@@ -116,12 +110,6 @@
                         <div class="nav-menu">
                             <ul class="main-menu">
                                 <li><a href="./index.html">Home</a></li>
-                                <li><a href="./fiches-detaillees.html">Joueurs & XXX</a>
-                                    <ul class="dropdown">
-                                        <li><a href="fiches-detaillees.html#joueurs">Joueurs</a></li>
-                                        <li><a href="fiches-detaillees.html#XXX">XX</a></li>
-                                    </ul>
-                                </li>
                                 <li><a href="./club.html">Club</a></li>
                                 <li><a href="./schedule.html">Schedule</a></li>
                                 <li><a href="./result.html">Results</a></li>
@@ -150,53 +138,88 @@
     </header>
     <!-- Header End -->
 
-    <!-- Map Section Begin -->
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.4894247185043!2d4.337550028673637!3d50.89918773166839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47e4ba78a25%3A0xde9326a4546954ab!2sBrussels%20Expo!5e1!3m2!1sfr!2sbe!4v1774103479475!5m2!1sfr!2sbe" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <!-- Map Section End -->
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-text">
+                        <h2>Inscription</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
 
     <!-- Contact Section Begin -->
     <section class="contact-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="contact-form">
-                        <h2>Une question ? Ecrivez-nous</h2>
-                        <form action="" method="post">
-                            <div class="group-in">
-                                <label for="name">Nom</label>
-                                <input type="text" name="name" id="name" placeholder="Votre nom complet" required >
-                            </div>
-                            <div class="group-in">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" placeholder="exemple@mail.com" required >
-                            </div>
-                            <div class="group-in">
-                                <label for="ticket">Type de billet souhaité</label>
-                                <select name="ticket" id="ticket">
-                                    <option value="" disabled selected>Veuillez choisir une option</option>
-                                    <option value="day">Pass 1 Jour (Accès simple)</option>
-                                    <option value="vip">Pass VIP (Accès coulisses + Rencontre joueurs)</option>
-                                    <option value="final">Pass Finale uniquement</option>
-                                </select>
-                            </div>
-                            <div class="group-in">
-                                <label for="guests">Nombre de visiteurs</label>
-                                <input type="number" id="guests" name="guests" min="1" max="10" value="1">
-                            </div>
-                            <div class="group-in group-checkbox">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">Recevoir les alertes sur les résultats et la remise des prix</label>
-                            </div>
-                            <div class="group-in">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Comment pouvons-nous vous aider ?"></textarea>
-                            </div>
-                            <button type="submit">Envoyer</button>
+                  <div class="contact-form">
+                        <h2>Formulaire d'inscription</h2>
+                        <form action="">
+                              <div class="row">
+                                    <div class="col-6">
+                                          <div class="group-in">
+                                                <label for="last-name">Nom</label>
+                                                <input type="text" name="last-name" id="last-name" placeholder="Votre nom">
+                                          </div>
+                                    </div>
+                                    <div class="col-6">
+                                          <div class="group-in">
+                                                <label for="first-name">Prénom</label>
+                                                <input type="text" name="first-name" id="first-name" placeholder="Votre prénom">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                          <div class="group-in">
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" id="email" placeholder="exemple@mail.com">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                          <div class="group-in">
+                                                <label for="phone">Téléphone</label>
+                                                <input type="tel" name="phone" id="phone" placeholder="04xx / xx xx xx">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="group-in">
+                                            <label>Votre catégorie</label>
+                                            <div class="radio-group">
+                                                <div class="radio-item">
+                                                    <input type="radio" name="categorie" id="open" value="open" checked>
+                                                    <label for="open">Open</label>
+                                                </div>
+                                                <div class="radio-item">
+                                                    <input type="radio" name="categorie" id="jeune" value="jeune">
+                                                    <label for="jeune">Jeune (-20 ans)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="group-in">
+                                            <label for="visitor-count">Nombre de visiteurs accompagnants</label>
+                                            <input type="number" name="visitor-count" id="visitor-count" min="0" max="10" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="group-in group-checkbox">
+                                            <input type="checkbox" name="terms" id="terms" required>
+                                            <label for="terms">
+                                                J'accepte les <a href="#" style="color: #dd1515; text-decoration: underline;">conditions générales</a> et la politique de confidentialité.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                          <button type="submit">S'inscrire maintenant</button>
+                                    </div>
+                              </div>
                         </form>
-                    </div>
+                  </div>    
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-info">
