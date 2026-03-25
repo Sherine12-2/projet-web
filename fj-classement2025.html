@@ -152,94 +152,104 @@
 
     <!-- Header End -->
 
-    <section id="joueurs" class="fd-section-joueurs">
-        <div class="fd-conteneur">
 
-            <input type="checkbox" id="toggle-joueurs" class="fd-toggle-checkbox" />
+   
 
-            <label for="toggle-joueurs" class="fd-titre-section">
-                Les joueurs ▼
-            </label>
+    <!--Classements Tournois 2025 -->
 
-            <div class="fd-grille-joueurs">
-
-                <!-- Carte joueur -->
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/magnus-carlsen.jpeg" alt="Magnus Carlsen">
-                    <h3>Magnus Carlsen</h3>
-                    <p class="fd-pays"><span class="fi fi-no"></span> Norvège</p>
-                    <p class="fd-fide">FIDE ID : 1503014</p>
-                    <a href="fj-magnuscarlsen.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/fabiano-caruana.jpg" alt="Fabiano Caruana">
-                    <h3>Fabiano Caruana</h3>
-                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
-                    <p class="fd-fide">FIDE ID : 2020009</p>
-                    <a href="fj-fabianocaruana.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/hikaru-nakamura.jpeg" alt="Hikaru Nakamura">
-                    <h3>Hikaru Nakamura</h3>
-                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
-                    <p class="fd-fide">FIDE ID : 2016192</p>
-                    <a href="fj-hikarunakamura.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/vincent-keymer.jpeg" alt="Vincent Keymer">
-                    <h3>Vincent Keymer</h3>
-                    <p class="fd-pays"><span class="fi fi-de"></span> Allemagne</p>
-                    <p class="fd-fide">FIDE ID : 12940690</p>
-                    <a href="fj-vincentkeymer.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/nodirbek-abdusattorov.jpeg" alt="Nodirbek Abdusattorov">
-                    <h3>Nodirbek Abdusattorov</h3>
-                    <p class="fd-pays"><span class="fi fi-uz"></span> Ouzbékistan</p>
-                    <p class="fd-fide">FIDE ID : 14204118</p>
-                    <a href="fj-nodirbekabdusattorov.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/alireza-firouzja.jpg" alt="Alireza Firouzja">
-                    <h3>Alireza Firouzja</h3>
-                    <p class="fd-pays"><span class="fi fi-fr"></span> France</p>
-                    <p class="fd-fide">FIDE ID : 12573981</p>
-                    <a href="fj-firouzjaalireza.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
+    <section class="fj-section-tournoi">
+        <h1 class="fj-titre-annee">Tournois de 2025</h1>
+        <div class="fj-bloc-classements">
+            <div class="fj-classement-box">
+                <table class="fj-table"> 
+                    <caption>Classement A</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom Prénom</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="fj-magnuscarlsen.html" class="fj-lien-joueur">Carlsen, Magnus</a></td>
+                            <td>2840</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="fj-hikarunakamura.html" class="fj-lien-joueur">Nakamura, Hikaru</a></td>
+                            <td>2810</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="fj-fabianocaruana.html" class="fj-lien-joueur">Caruana, Fabiano</a></td>
+                            <td>2795</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="fj-vincentkeymer.html" class="fj-lien-joueur">Keymer, Vincent</a></td>
+                            <td>2776</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="fj-nodirbekabdusattorov.html" class="fj-lien-joueur">Abdusattorov, Nodirbek</a></td>
+                            <td>2771</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="fj-firouzjaalireza.html" class="fj-lien-joueur">Firouzja, Alireza</a></td>
+                            <td>2759</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <p class="fd-description">
-                Retrouvez la liste complète des joueurs en cliquant sur le bouton ci-dessus.
-            </p>
-
-        </div>
-    </section>
-
-
-                <!--Section classement/....-->
-    <section id="classement" class="fd-section-classement">
-        <div class="fd-conteneur">
-            <input type="checkbox" id="toggle-classement" class="fd-toggle-checkbox" />
-
-            <label for="toggle-classement" class="fd-titre-section">
-                Les classements ▼
-            </label>
-             <div class="fd-grille-classement">
-
-                <!--Classements-->
-                <p><a href="fj-classement2026.html" class="fj-lien-joueur">2026</a></p>
-                <p><a href="fj-classement2025.html" class="fj-lien-joueur">2025</a></p>
-                <p><a href="fj-classement2024.html" class="fj-lien-joueur">2024</a></p>
-                
+            <div class="fj-classement-box">
+                <table class="fj-table"> 
+                    <caption>Classement B</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom Prénom</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="fj-magnuscarlsen.html" class="fj-lien-joueur">Carlsen, Magnus</a></td>
+                            <td>2840</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="fj-hikarunakamura.html" class="fj-lien-joueur">Nakamura, Hikaru</a></td>
+                            <td>2810</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="fj-fabianocaruana.html" class="fj-lien-joueur">Caruana, Fabiano</a></td>
+                            <td>2795</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="fj-vincentkeymer.html" class="fj-lien-joueur">Keymer, Vincent</a></td>
+                            <td>2776</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="fj-nodirbekabdusattorov.html" class="fj-lien-joueur">Abdusattorov, Nodirbek</a></td>
+                            <td>2771</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="fj-firouzjaalireza.html" class="fj-lien-joueur">Firouzja, Alireza</a></td>
+                            <td>2759</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
-        <p>Retrouvez la liste complète du classement des tournois en cliquant sur le bouton ci-dessus.</p>
+            
         </div>
     </section>
 

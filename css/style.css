@@ -2680,31 +2680,37 @@ ol {
 	}
 }
 
-/* ===================== SECTION ===================== */
-.fd-section-joueurs {
+/* ===================== SECTIONS GENERALES ===================== */
+
+/* sections joueurs & classement */
+.fd-section-joueurs,
+.fd-section-classement {
     padding: 60px 0;
     text-align: center;
 }
 
+/* titres sections (boutons toggle inclus) */
 .fd-titre-section {
     font-size: 32px;
     margin-bottom: 40px;
 }
 
-/* ===================== TOGGLE CHECKBOX ===================== */
-/* cacher la checkbox */
+
+/* ===================== TOGGLE (AFFICHAGE / MASQUAGE) ===================== */
+
+/* cacher checkbox */
 .fd-toggle-checkbox {
     display: none;
 }
 
-/* grille cachée par défaut */
+/* grille joueurs cachée */
 .fd-grille-joueurs {
     display: none;
     gap: 30px;
     justify-content: center;
 }
 
-/* afficher la grille quand la checkbox est cochée */
+/* affichage joueurs */
 .fd-toggle-checkbox:checked + label + .fd-grille-joueurs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -2712,7 +2718,20 @@ ol {
     margin: 0 auto;
 }
 
-/* design du label pour que ça ressemble à ton h2 */
+/* grille classement cachée */
+.fd-grille-classement {
+    display: none;
+    margin-top: 20px;
+}
+
+/* affichage classement */
+#toggle-classement:checked + label + .fd-grille-classement {
+    display: block;
+}
+
+
+/* ===================== BOUTON TOGGLE ===================== */
+
 label.fd-titre-section {
     cursor: pointer;
     user-select: none;
@@ -2722,7 +2741,7 @@ label.fd-titre-section {
     border: 2px solid #ff3b3b;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    transition: 0.3s;
 }
 
 label.fd-titre-section:hover {
@@ -2731,22 +2750,24 @@ label.fd-titre-section:hover {
     transform: translateY(-3px);
 }
 
-/* ===================== CARTE JOUEUR ===================== */
+
+/* ===================== CARTES JOUEURS ===================== */
+
 .fd-carte-joueur {
     width: 220px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    text-align: center;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 400px;
 }
 
-/* IMAGE */
+/* image */
 .fd-carte-joueur img {
     width: 100%;
     height: 250px;
@@ -2755,16 +2776,18 @@ label.fd-titre-section:hover {
     margin-bottom: 10px;
 }
 
-/* NOM */
+/* nom */
 .fd-carte-joueur h3 {
     margin: 10px 0 5px;
 }
 
-/* PAYS & FIDE */
-.fd-pays, .fd-fide {
+/* pays + fide */
+.fd-pays,
+.fd-fide {
     color: gray;
     margin-bottom: 15px;
 }
+
 .fd-pays {
     display: flex;
     align-items: center;
@@ -2772,43 +2795,43 @@ label.fd-titre-section:hover {
     gap: 8px;
 }
 
-/* BOUTON PROFIL */
+/* bouton profil */
 .fd-bouton-profil {
-    display: inline-block;
+    margin-top: auto;
     padding: 8px 15px;
     background: #ff3b3b;
     color: white;
     border-radius: 6px;
     text-decoration: none;
-    transition: background 0.3s, color 0.3s;
-    margin-top: auto;
+    transition: 0.3s;
 }
 
 .fd-bouton-profil:hover {
     background: #cc2f2f;
 }
 
-/* HOVER CARTE */
+/* hover carte */
 .fd-carte-joueur:hover {
     transform: translateY(-5px);
 }
 
-/* ===================== GLOBAL ===================== */
+
+/* ===================== PAGE FICHE JOUEUR ===================== */
+
 .fd-fiche-joueur {
     padding: 50px 20px;
     background-color: #f9f9f9;
 }
 
-/* CONTAINER PRINCIPAL */
+/* layout principal */
 .fd-container-fiche {
     display: flex;
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
-    align-items: flex-start;
 }
 
-/* ===================== COLONNE GAUCHE ===================== */
+/* colonne gauche */
 .fd-col-gauche {
     width: 260px;
     text-align: center;
@@ -2824,11 +2847,7 @@ label.fd-titre-section:hover {
     margin-bottom: 15px;
 }
 
-.fd-col-gauche h2 {
-    margin-bottom: 5px;
-}
-
-/* INFOS */
+/* infos joueur */
 .fd-infos {
     list-style: none;
     padding: 0;
@@ -2841,7 +2860,9 @@ label.fd-titre-section:hover {
     font-size: 14px;
 }
 
+
 /* ===================== RATINGS ===================== */
+
 .fd-ratings {
     margin-top: 20px;
     padding-top: 15px;
@@ -2864,38 +2885,17 @@ label.fd-titre-section:hover {
 
 .fd-rating i {
     color: #ff3b3b;
-    font-size: 16px;
 }
 
-.fd-rating strong {
-    font-weight: bold;
-}
 
 /* ===================== COLONNE DROITE ===================== */
+
 .fd-col-droite {
     flex: 1;
 }
 
-/* BLOCS RANKING */
-.fd-ranking-box {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.fd-ranking-box h3 {
-    margin-bottom: 10px;
-}
-
-.fd-ranking-box p {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-}
-
-/* ===================== TITRES ===================== */
+/* blocs */
+.fd-ranking-box,
 .fd-titres {
     background: white;
     padding: 20px;
@@ -2904,6 +2904,12 @@ label.fd-titre-section:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* titres */
+.fd-titres h3 {
+    margin-bottom: 10px;
+}
+
+/* liste titres */
 .fd-liste-titres {
     list-style: none;
     padding: 0;
@@ -2917,17 +2923,91 @@ label.fd-titre-section:hover {
     border-bottom: 1px solid #eee;
 }
 
-.fd-liste-titres span,
-.fd-liste-titres strong {
-    color: #333;
+
+/* ===================== TABLEAUX (CLASSEMENT) ===================== */
+
+.fj-table {
+    width: 60%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
 }
 
-.fd-titres h3 {
+/* caption */
+.fj-table caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* cellules */
+.fj-table th,
+.fj-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* header */
+.fj-table th {
+    background-color: #ffeded;
+}
+
+/* alternance */
+.fj-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* hover */
+.fj-table tbody tr:hover {
+    background-color: #ffe5e5;
+}
+
+/* liens joueurs */
+.fj-lien-joueur {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.fj-lien-joueur:hover {
+    color: #ff3b3b;
+}
+
+
+/* ===================== PAGE TOURNOI ===================== */
+
+.fj-section-tournoi {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.fj-titre-annee {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.fj-bloc-classements {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.fj-classement-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
 /* ===================== RESPONSIVE ===================== */
+
 @media (max-width: 768px) {
+
     .fd-container-fiche {
         flex-direction: column;
         align-items: center;
@@ -2941,4 +3021,9 @@ label.fd-titre-section:hover {
     .fd-col-droite {
         width: 100%;
     }
+}
+
+.fj-lien-joueur {
+    display: inline;      /* force le lien à rester sur une ligne */
+    white-space: nowrap;  /* empêche le retour à la ligne */
 }
