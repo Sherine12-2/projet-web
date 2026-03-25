@@ -2244,7 +2244,7 @@ style pour checkbox formulaire
 	line-height: 30px;
 	/*  pour l'alignement	*/
 	display: flex;
-	align-items: flex-start;
+	align-items: center; /* emoji et texte sur la même ligne*/
 	gap: 12px;
 	margin-bottom: 10px;
 }
@@ -2265,6 +2265,12 @@ style pour checkbox formulaire
 .contact-info .ci-address ul li a:hover {
     color: #dd1515;
 }
+
+/*Modif contact info*/
+.contact-info .row .col-md-4 {
+    display: flex;
+}
+
 /* Style pour lien transport */
 .link-stib {
     color: #ed6b00; 
