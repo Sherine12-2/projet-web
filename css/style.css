@@ -2437,17 +2437,26 @@ style pour checkbox formulaire
 .ip-detail:last-child {
     margin-bottom: 0;
 }
-/* style pour le lien email */
-.ip-tel-link, .ip-email-link {
-    color: #dd1515;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
+/* Style universel pour les emails du projet */
+.ip-email-link {
+    color: #dd1515 !important; 
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
 }
 
-.ip-tel-link:hover, .ip-email-link:hover {
-    color: #111111; 
-    text-decoration: underline; 
+.ip-email-link:hover {
+    color: #111 !important;
+    text-decoration: underline !important;
+}
+
+/* Style pour les petits rappels d'adresse */
+.ip-mini-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* Style spécifique pour la carte transport large */
