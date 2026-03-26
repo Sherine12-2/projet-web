@@ -2359,6 +2359,123 @@ style pour checkbox formulaire
     color: #666;
     line-height: 1.6;
 }
+/* =============================
+   SECTION INFOS PRATIQUES 
+   ============================= */
+
+.ip-section {
+    background-color: #fdfdfd; 
+}
+
+.ip-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ip-section-title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.ip-card {
+    background: #ffffff;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Ombre légère */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+.ip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(221, 21, 21, 0.1);
+    border-color: #dd1515;
+}
+
+.ip-icon-box {
+    width: 60px;
+    height: 60px;
+    background: #fdf2f2;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    transition: 0.3s;
+}
+
+.ip-icon-box i {
+    font-size: 32px;
+    color: #dd1515;
+}
+
+.ip-card:hover .ip-icon-box {
+    background: #dd1515;
+}
+
+.ip-card:hover .ip-icon-box i {
+    color: #ffffff;
+}
+
+.ip-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.ip-detail {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.ip-detail:last-child {
+    margin-bottom: 0;
+}
+/* style pour le lien email */
+.ip-tel-link, .ip-email-link {
+    color: #dd1515;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ip-tel-link:hover, .ip-email-link:hover {
+    color: #111111; 
+    text-decoration: underline; 
+}
+
+/* Style spécifique pour la carte transport large */
+.ip-transport-card {
+    margin-top: 20px;
+
+}
+
+/* Bouton STIB personnalisé */
+.ip-stib-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #111; /* Noir comme ton template */
+    color: #ffffff;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.ip-stib-btn:hover {
+    background-color: #dd1515;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(221, 21, 21, 0.3);
+}
 
 /*---------------------
   Club Section
