@@ -3247,3 +3247,7 @@ label.fd-titre-section:hover {
     background: #ff3b3b;
     color: white;
 }
+
+h2.fj-hidden {
+    visibility: hidden;
+}
