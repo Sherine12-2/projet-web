@@ -2184,7 +2184,11 @@ ol {
     transition: 0.3s;
     border: 1px solid #eee;
     height: 100%;
-    margin-bottom: 30px;
+}
+.ip-card h3 {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-weight: 600;
 }
 
 .ip-card:hover {
@@ -2351,7 +2355,7 @@ address a:hover {
 }
 
 .ip-stib-btn:hover { 
-	background: #dd1515; 
+	background: #dd1515;
 	color: #fff; }
 
 /* 6. ÉQUIPE */
