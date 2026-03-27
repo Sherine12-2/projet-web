@@ -2227,7 +2227,34 @@ address {
     text-decoration: none;
 }
 
-.ip-email-link:hover { text-decoration: underline; }
+.ip-email-link:hover { 
+	text-decoration: underline; }
+
+/* Pour que les liens dans <address> ne soient pas bleus soulignés par défaut */
+address {
+    font-style: normal; /* Enlève l'italique par défaut de la balise address */
+    margin-top: 15px;
+}
+
+address p {
+    margin-bottom: 10px;
+}
+
+address a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+address a:hover {
+    color: #dd1515;
+}
+
+.ip-separator {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 40px;
+}
 
 /* --- Blocs d'adresses sobres et cohérents avec le formulaire --- */
 
@@ -2271,7 +2298,7 @@ address {
 }
 
 .contact-info .ci-address .icon {
-    color: #dd1515; /* Seul rappel de rouge sur les icônes */
+    color: #dd1515; 
     font-size: 16px;
     min-width: 25px;
     text-align: center;
@@ -2342,6 +2369,41 @@ address {
 	font-weight: 700; 
 	text-transform: uppercase; 
 	font-size: 12px; }
+
+/* 7. SPECIFIQUE INSCRIPTION (RADIOS & DOCS) */
+.radio-group-container {
+    border: none;
+    padding: 0;
+    margin: 10px 0 25px 0;
+}
+.radio-group {
+    display: flex;
+    gap: 30px;
+}
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.radio-item input[type="radio"] {
+    accent-color: #dd1515; /* Met le rond du bouton en rouge */
+    width: 18px;
+    height: 18px;
+}
+.contact-info-box {
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    background: #ffffff;
+}
+.contact-info-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dd1515;
+    display: inline-block;
+}
 
 /*---------------------
   Club Section
