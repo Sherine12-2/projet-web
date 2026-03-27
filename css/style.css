@@ -2114,7 +2114,7 @@ ol {
     text-transform: uppercase;
 }
 
-/* 2. LE FORMULAIRE (Correction pour Contact Visiteur + Inscription) */
+/* 2. LE FORMULAIRE (Contact Visiteur + Inscription) */
 .contact-form .group-in {
     margin-bottom: 25px;
 }
@@ -2126,7 +2126,6 @@ ol {
     margin-bottom: 8px;
 }
 
-/* Cible les inputs directs pour la page contact sans classes */
 .contact-form input, 
 .contact-form select, 
 .contact-form textarea,
@@ -2158,7 +2157,6 @@ ol {
     outline: none;
 }
 
-/* Bouton du formulaire */
 .contact-form button {
     font-size: 14px;
     color: #ffffff;
@@ -2204,9 +2202,13 @@ ol {
     margin: 0 auto 25px;
 }
 
-.ip-icon-box i { font-size: 28px; color: #dd1515; }
-.ip-card:hover .ip-icon-box { background: #dd1515; }
-.ip-card:hover .ip-icon-box i { color: #ffffff; }
+.ip-icon-box i { 
+	font-size: 28px; 
+	color: #dd1515; }
+.ip-card:hover .ip-icon-box { 
+	background: #dd1515; }
+.ip-card:hover .ip-icon-box i { 
+	color: #ffffff; }
 
 /* 4. TEXTES, ADRESSES ET LIENS */
 .ip-detail, address p, .contact-info p, .contact-info ul li {
@@ -2216,7 +2218,8 @@ ol {
     margin-bottom: 8px;
 }
 
-address { font-style: normal; }
+address { 
+	font-style: normal; }
 
 .ip-email-link, .ip-tel-link, .contact-info a {
     color: #dd1515;
@@ -2225,6 +2228,60 @@ address { font-style: normal; }
 }
 
 .ip-email-link:hover { text-decoration: underline; }
+
+/* --- Blocs d'adresses sobres et cohérents avec le formulaire --- */
+
+.contact-info .ci-address {
+    background: #ffffff; /* Fond blanc comme les inputs */
+    padding: 30px;
+    border: 1px solid #d9d9d9; /* Même bordure que ton formulaire */
+    border-radius: 2px; /* Même arrondi que tes inputs */
+    margin-bottom: 25px;
+    box-shadow: none; /* On enlève l'ombre pour rester sobre */
+    transition: none; /* On enlève l'effet de mouvement */
+}
+
+.contact-info .ci-address h5 {
+    color: #151618;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dd1515; /* Un soulignement rouge discret sous le titre */
+    display: inline-block; /* Pour que le trait ne fasse pas toute la largeur */
+}
+
+.contact-info .ci-address ul {
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.contact-info .ci-address ul li {
+    list-style: none;
+    font-size: 14px;
+    color: #636363;
+    margin-bottom: 12px !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-info .ci-address ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.contact-info .ci-address .icon {
+    color: #dd1515; /* Seul rappel de rouge sur les icônes */
+    font-size: 16px;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* On ajuste l'espacement du texte d'introduction au-dessus */
+.contact-info p {
+    margin-bottom: 30px;
+    color: #636363;
+}
 
 /* 5. LISTES ET BOUTONS SPÉCIFIQUES */
 .ip-requirements, .ip-transport-list {
@@ -2242,7 +2299,11 @@ address { font-style: normal; }
 }
 
 .ip-requirements dd::before, .ip-transport-list li::before {
-    content: "•"; color: #dd1515; position: absolute; left: 0; font-weight: bold;
+    content: "•"; 
+    color: #dd1515; 
+    position: absolute; 
+    left: 0; 
+    font-weight: bold;
 }
 
 .ip-stib-btn {
@@ -2257,12 +2318,30 @@ address { font-style: normal; }
     transition: 0.3s;
 }
 
-.ip-stib-btn:hover { background: #dd1515; color: #fff; }
+.ip-stib-btn:hover { 
+	background: #dd1515; 
+	color: #fff; }
 
 /* 6. ÉQUIPE */
-.team-item { text-align: center; border: 1px solid #eee; padding: 30px 20px; border-radius: 10px; transition: 0.3s; margin-bottom: 30px;}
-.team-photo img { border-radius: 50%; width: 140px; height: 140px; object-fit: cover; border: 3px solid #dd1515; margin-bottom: 20px; }
-.team-role { color: #dd1515; font-weight: 700; text-transform: uppercase; font-size: 12px; }
+.team-item { 
+	text-align: center; 
+	border: 1px solid #eee; 
+	padding: 30px 20px; 
+	border-radius: 10px; 
+	transition: 0.3s; 
+	margin-bottom: 30px;}
+.team-photo img { 
+	border-radius: 50%; 
+	width: 140px; 
+	height: 140px; 
+	object-fit: cover; 
+	border: 3px solid #dd1515; 
+	margin-bottom: 20px; }
+.team-role { 
+	color: #dd1515; 
+	font-weight: 700; 
+	text-transform: uppercase; 
+	font-size: 12px; }
 
 /*---------------------
   Club Section
