@@ -3251,3 +3251,24 @@ label.fd-titre-section:hover {
 h2.fj-hidden {
     visibility: hidden;
 }
+
+.fj-a-venir {
+    text-align: center;        
+    vertical-align: middle;    
+    font-style: italic;       
+    color: #555;               
+    height: 50px;              
+    white-space: nowrap;       
+    padding: 10px 0;           
+}
+
+/* ===================== TITRES CATEGORIE ===================== */
+.fj-titre-categorie {
+    font-size: 28px;
+    margin: 40px 0 20px;
+    font-weight: 600;
+    text-align: center;       /* centre le texte */
+    width: 100%;              /* s'assure qu'il prend toute la largeur */
+    display: block;           /* au cas où un parent flex l’affecterait */
+}
+
