@@ -33,13 +33,13 @@
 
 /* Variables couleurs échecs */
 :root {
-    --couleur-principale: #8b4513;    /* Marron échiquier bois */
-    --couleur-accent: #c9a227;        /* Or trophée */
-    --couleur-sombre: #1a1a1a;        /* Noir pièces */
-    --couleur-claire: #f5f0e8;        /* Blanc échiquier */
-    --couleur-beige: #d4b483;         /* Cases claires */
-    --couleur-bordeaux: #8b0000;      /* Rouge tension */
-    --couleur-nav: #2c2416;           /* Fond navigation sombre bois */
+    --couleur-principale: #8b4513;
+    --couleur-accent: #c9a227;
+    --couleur-sombre: #1a1a1a;
+    --couleur-claire: #f5f0e8;
+    --couleur-beige: #d4b483;
+    --couleur-bordeaux: #8b0000;
+    --couleur-nav: #2c2416;
     --couleur-texte: #333;
     --couleur-gris: #636363;
 }
@@ -92,6 +92,11 @@ textarea:focus {
     outline: none;
 }
 
+/* Transition globale sur les liens */
+a {
+    transition: color 0.3s, background 0.3s;
+}
+
 a:hover,
 a:focus {
     text-decoration: none;
@@ -103,6 +108,16 @@ ul,
 ol {
     padding: 0;
     margin: 0;
+}
+
+/* Contenu principal */
+main {
+    display: block;
+}
+
+/* Balise address dans le footer */
+address {
+    font-style: normal;
 }
 
 /*---------------------
@@ -202,7 +217,6 @@ ol {
 }
 
 /* Boutons */
-
 .primary-btn {
     font-size: 16px;
     color: #ffffff;
@@ -220,7 +234,6 @@ ol {
 }
 
 /* Chargement */
-
 #preloder {
     position: fixed;
     width: 100%;
@@ -284,7 +297,6 @@ ol {
 }
 
 /* Barre de recherche */
-
 .spacial-controls {
     position: fixed;
     width: 111px;
@@ -559,6 +571,23 @@ ol {
     margin-bottom: 32px;
 }
 
+/* Date et titre du héros bien visibles */
+.hero-date {
+    color: var(--couleur-accent);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.hero-titre {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
 /*---------------------
   Bandeau Actualités
 -----------------------*/
@@ -693,7 +722,7 @@ ol {
     color: #ffffff;
 }
 
-/* VS et scores */
+/* Étiquette VS et scores */
 .vs-label {
     display: block;
     font-size: 24px;
@@ -704,7 +733,7 @@ ol {
 }
 
 /*---------------------
-  Section Échecs (Actu)
+  Section Actualités Échecs
 -----------------------*/
 
 .chess-section {
@@ -803,7 +832,8 @@ ol {
     padding-bottom: 30px;
 }
 
-.section-title.latest-title h3 {
+/* Correction : h2 au lieu de h3 */
+.section-title.latest-title h2 {
     float: left;
 }
 
@@ -1293,7 +1323,14 @@ ol {
     background: var(--couleur-accent);
 }
 
+/*---------------------
+  Pied de page
+-----------------------*/
 
+.footer-section {
+    padding-top: 60px;
+    border-top: 4px solid var(--couleur-accent);
+}
 
 .fs-logo {
     margin-bottom: 30px;
@@ -1357,7 +1394,6 @@ ol {
 
 .fs-widget {
     margin-bottom: 30px;
-    overflow: hidden;
 }
 
 .fs-widget h3 {
@@ -1373,15 +1409,18 @@ ol {
     margin-bottom: 26px;
 }
 
+/* Liens de navigation du footer */
 .fs-widget .fw-links {
-    width: 42%;
-    float: left;
+    width: 100%;
+    float: none;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .fs-widget .fw-links li {
-    list-style: none;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .fs-widget .fw-links li a {
@@ -1389,8 +1428,9 @@ ol {
     color: #b5b8be;
     line-height: 36px;
     font-weight: 500;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     transition: all 0.3s;
 }
 
@@ -1398,6 +1438,13 @@ ol {
     color: var(--couleur-accent);
 }
 
+.fs-widget .fw-links li i {
+    width: 15px;
+    text-align: center;
+    color: var(--couleur-principale);
+}
+
+/* Articles récents footer */
 .fs-widget .fw-item {
     margin-bottom: 18px;
 }
@@ -1489,7 +1536,7 @@ ol {
 /* --------------------------------- Styles autres pages --------------------------------- */
 
 /*---------------------
-  Fil d'Ariane (breadcrumb)
+  Fil d'Ariane - breadcrumb section
 -----------------------*/
 
 .breadcrumb-section {
@@ -1699,6 +1746,18 @@ ol {
     background: rgba(44,36,22,0.7);
 }
 
+.large-blog .bi-text h2 {
+    margin-bottom: 15px;
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.large-blog .bi-text h2 a {
+    color: #ffffff;
+    line-height: 38px;
+    font-weight: 500;
+}
+
 .large-blog .bi-text h3 {
     margin-bottom: 15px;
     padding-top: 10px;
@@ -1761,14 +1820,15 @@ ol {
     padding-top: 10px;
 }
 
-.blog-items .single-item .bi-text h4 {
+.blog-items .single-item .bi-text h3 {
     margin-bottom: 12px;
 }
 
-.blog-items .single-item .bi-text h4 a {
+.blog-items .single-item .bi-text h3 a {
     color: #151618;
     line-height: 32px;
     font-weight: 500;
+    font-size: 18px;
 }
 
 .blog-items .single-item .bi-text ul {
@@ -1831,6 +1891,11 @@ ol {
     background: var(--couleur-principale);
     color: #ffffff;
     border-color: var(--couleur-principale);
+}
+
+/* Barre latérale blog */
+aside.blog-sidebar {
+    padding-left: 15px;
 }
 
 .blog-sidebar .bs-categories {
@@ -2329,6 +2394,14 @@ ol {
     padding: 60px 0;
     background: var(--couleur-sombre);
     border-top: 4px solid var(--couleur-accent);
+    /* Motif échiquier subtil en fond */
+    background-image:
+        repeating-conic-gradient(
+            rgba(255,255,255,0.03) 0% 25%,
+            transparent 0% 50%
+        );
+    background-size: 40px 40px;
+    background-color: var(--couleur-sombre);
 }
 
 .testimonial-section .section-title h2 {
@@ -2361,26 +2434,21 @@ ol {
     padding-left: 12px;
 }
 
-.auteur {
-    display: flex;
-    align-items: center;
+/* Témoignages sans photo */
+.auteur-sans-photo {
+    border-top: 2px solid var(--couleur-beige);
+    padding-top: 15px;
+    margin-top: 10px;
 }
 
-.auteur img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
-    border: 2px solid var(--couleur-accent);
-}
-
-.auteur strong {
+.auteur-sans-photo strong {
     display: block;
     color: var(--couleur-principale);
+    font-size: 16px;
+    margin-bottom: 4px;
 }
 
-.auteur span {
+.auteur-sans-photo span {
     color: var(--couleur-accent);
     font-size: 13px;
 }
@@ -2417,110 +2485,7 @@ ol {
 .btn-twitter  { background: #1da1f2; }
 .btn-whatsapp { background: #25d366; }
 
-/*---------------------
-  Pied de page CORRIGÉ
------------------------*/
-
-.footer-section {
-    padding-top: 60px;
-    border-top: 4px solid var(--couleur-accent);
-}
-
-.fs-logo {
-    margin-bottom: 30px;
-}
-
-.fs-logo .logo {
-    margin-bottom: 30px;
-}
-
-.fs-logo .logo a {
-    display: inline-block;
-}
-
-.fs-logo ul {
-    margin-bottom: 22px;
-}
-
-.fs-logo ul li {
-    font-size: 16px;
-    color: #ababab;
-    line-height: 36px;
-    position: relative;
-    list-style: none;
-    padding-left: 30px;
-}
-
-.fs-logo ul li i {
-    font-size: 16px;
-    color: var(--couleur-accent);
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    top: 8px;
-}
-
-.fs-widget {
-    margin-bottom: 30px;
-}
-
-.fs-widget h3 {
-    color: var(--couleur-accent);
-    font-weight: 500;
-    margin-bottom: 26px;
-    font-size: 20px;
-}
-
-/* 🔥 FIX ALIGNEMENT */
-.fs-widget .fw-links {
-    width: 100%;
-    float: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.fs-widget .fw-links li {
-    display: block;
-    margin-bottom: 6px;
-}
-
-.fs-widget .fw-links li a {
-    font-size: 16px;
-    color: #b5b8be;
-    line-height: 36px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s;
-}
-
-.fs-widget .fw-links li a:hover {
-    color: var(--couleur-accent);
-}
-
-.fs-widget .fw-links li i {
-    width: 15px;
-    text-align: center;
-}
-
-/* Articles */
-.fs-widget .fw-item {
-    margin-bottom: 18px;
-}
-
-.fs-widget .fw-item h4 {
-    margin-bottom: 8px;
-}
-
-.fs-widget .fw-item h4 a {
-    color: #ffffff;
-    font-weight: 500;
-    line-height: 26px;
-}
-
-/* Réseaux */
+/* Réseaux sociaux footer */
 .reseaux-footer {
     margin-top: 20px;
 }
@@ -2551,7 +2516,7 @@ ol {
 .rs-instagram { background: #e1306c; }
 .rs-youtube   { background: #ff0000; }
 
-/* Droits d'auteur */
+/* Droits d'auteur footer */
 .droits-auteur {
     margin-top: 30px;
     padding-top: 20px;
@@ -2565,34 +2530,93 @@ ol {
     margin: 0;
 }
 
+/*---------------------
+  Fil d'Ariane sans style inline
+-----------------------*/
 
-
-/* Fil d'Ariane */
-nav[aria-label="Fil d'ariane"] {
+.fil-ariane {
     background: var(--couleur-sombre);
     padding: 7px 0;
     border-bottom: 2px solid var(--couleur-principale);
 }
 
-nav[aria-label="Fil d'ariane"] a {
+.fil-ariane ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.fil-ariane ol li a {
     color: var(--couleur-beige);
     text-decoration: none;
     font-size: 12px;
 }
 
-nav[aria-label="Fil d'ariane"] a:hover {
+.fil-ariane ol li a:hover {
     color: var(--couleur-accent);
 }
 
-nav[aria-label="Fil d'ariane"] ol li:last-child {
-    color: var(--couleur-accent);
-    font-size: 12px;
-}
-
-nav[aria-label="Fil d'ariane"] ol li .fa-angle-right {
+.fil-ariane ol li.separateur {
     color: var(--couleur-principale);
     margin: 0 6px;
     font-size: 12px;
+}
+
+.fil-ariane ol li.page-courante {
+    color: var(--couleur-accent);
+    font-size: 12px;
+}
+
+/*---------------------
+  Pagination
+-----------------------*/
+
+.pagination-blog {
+    margin-top: 50px;
+}
+
+.pagination-blog ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination-blog ul li a {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--couleur-nav);
+    border: 2px solid var(--couleur-beige);
+    border-radius: 2px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.3s;
+    text-decoration: none;
+    background: var(--couleur-claire);
+}
+
+.pagination-blog ul li a:hover {
+    background: var(--couleur-principale);
+    color: #ffffff;
+    border-color: var(--couleur-principale);
+}
+
+.pagination-blog ul li.page-active a {
+    background: var(--couleur-principale);
+    color: #ffffff;
+    border-color: var(--couleur-principale);
+}
+
+/*---------------------
+  Niveau sidebar - page Tactique
+-----------------------*/
+
+.niveau-section {
+    margin-top: 20px;
 }
 
 /* ================================= RESPONSIVE ================================= */
@@ -2732,6 +2756,12 @@ nav[aria-label="Fil d'ariane"] ol li .fa-angle-right {
     .schedule-sidebar { margin-top: 30px; }
     .blog-sidebar { margin-top: 40px; }
     .contact-info { padding-top: 40px; }
+    /* Responsive galerie */
+    .photo-wrapper img { height: 150px; }
+    /* Responsive témoignages */
+    .carte-temoignage { margin-bottom: 20px; }
+    /* Responsive newsletter */
+    .formulaire-newsletter { margin-top: 30px; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2744,7 +2774,7 @@ nav[aria-label="Fil d'ariane"] ol li .fa-angle-right {
 @media only screen and (max-width: 767px) {
     .ms-content .mc-table table tr td.left-team { padding-left: 15px; }
     .ms-content .mc-table table tr td.right-team { padding-right: 15px; }
-    .section-title.latest-title h3 { float: none; }
+    .section-title.latest-title h2 { float: none; }
     .section-title.latest-title ul { text-align: left; padding-top: 10px; }
     .section-title.latest-title ul li { margin-bottom: 5px; }
     .club-content .cc-text .ct-widget ul li { width: 33.33%; }
@@ -2754,13 +2784,17 @@ nav[aria-label="Fil d'ariane"] ol li .fa-angle-right {
     .copyright-option .co-text { float: none; text-align: center; }
     .blog-items .single-item .bi-pic { float: none; margin-right: 0; }
     .blog-items .single-item .bi-text { padding-top: 20px; }
-    .trending-news-section .tn-title { font-size: 17px; padding-right: 16px; padding-top: 17px; }
     .trending-news-section .tn-title { display: none; }
     .trending-news-section .news-slider.owl-carousel .owl-nav { display: none; }
     .trending-news-section .news-slider .nt-item { padding-left: 0; }
     .search-model-form { width: 100%; }
     .search-model-form input { width: 100%; }
     .left-blog-pad { padding-right: 15px; }
+    /* Responsive boutons d'action */
+    .btn-inscrire { margin-right: 0; margin-bottom: 10px; display: block; }
+    .btn-pdf { display: block; margin-top: 10px; }
+    /* Responsive pagination */
+    .pagination-blog ul { justify-content: center; }
 }
 
 @media only screen and (max-width: 479px) {
@@ -2772,118 +2806,7 @@ nav[aria-label="Fil d'ariane"] ol li .fa-angle-right {
     .video-item { height: 300px; }
     .copyright-option .co-widget ul li { font-size: 12px; margin-right: 10px; }
     .breadcrumb-section .bs-text h2 { font-size: 36px; }
-}
-/* ===== Fil d'Ariane sans style inline ===== */
-.fil-ariane {
-    background: var(--couleur-sombre);
-    padding: 7px 0;
-    border-bottom: 2px solid var(--couleur-principale);
-}
-
-.fil-ariane ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-.fil-ariane ol li a {
-    color: var(--couleur-beige);
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.fil-ariane ol li a:hover {
-    color: var(--couleur-accent);
-}
-
-.fil-ariane ol li.separateur {
-    color: var(--couleur-principale);
-    margin: 0 6px;
-    font-size: 12px;
-}
-
-.fil-ariane ol li.page-courante {
-    color: var(--couleur-accent);
-    font-size: 12px;
-}
-
-/* ===== Pagination ===== */
-.pagination-blog {
-    margin-top: 50px;
-}
-
-.pagination-blog ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.pagination-blog ul li a {
-    display: inline-block;
-    font-size: 14px;
-    color: var(--couleur-nav);
-    border: 2px solid var(--couleur-beige);
-    border-radius: 2px;
-    font-weight: 500;
-    padding: 8px 16px;
-    transition: all 0.3s;
-    text-decoration: none;
-    background: var(--couleur-claire);
-}
-
-.pagination-blog ul li a:hover {
-    background: var(--couleur-principale);
-    color: #ffffff;
-    border-color: var(--couleur-principale);
-}
-
-.pagination-blog ul li.page-active a {
-    background: var(--couleur-principale);
-    color: #ffffff;
-    border-color: var(--couleur-principale);
-}
-
-/* ===== Niveau sidebar (tactics) ===== */
-.niveau-section {
-    margin-top: 20px;
-}
-/* Héros - date et titre visibles */
-.hero-date {
-    color: var(--couleur-accent);
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-}
-
-.hero-titre {
-    font-size: 48px;
-    color: #ffffff;
-    font-weight: 700;
-    margin-bottom: 32px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
-}
-
-/* Témoignages sans photo */
-.auteur-sans-photo {
-    border-top: 2px solid var(--couleur-beige);
-    padding-top: 15px;
-    margin-top: 10px;
-}
-
-.auteur-sans-photo strong {
-    display: block;
-    color: var(--couleur-principale);
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.auteur-sans-photo span {
-    color: var(--couleur-accent);
-    font-size: 13px;
+    /* Responsive héros */
+    .hero-titre { font-size: 28px; }
+    .hero-date { font-size: 16px; }
 }
