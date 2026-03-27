@@ -2306,6 +2306,25 @@ style pour checkbox formulaire
 .ip-list li::before {
     content: "- ";
 }
+/* Style liste de description - inscription */
+.ip-requirements {
+    margin-top: 15px;
+}
+
+.ip-requirements dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ip-requirements dd {
+    margin-left: 0; 
+    padding-bottom: 3px;
+}
+
+.ip-requirements dd::before {
+    content: "• "; /* Ajoute une puce propre via CSS */
+    color: #333;
+}
 
 /*Modif contact info*/
 .contact-info .row .col-md-4 {

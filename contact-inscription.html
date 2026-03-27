@@ -187,17 +187,19 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="group-in">
-                                            <label>Votre catégorie</label>
-                                            <div class="radio-group">
-                                                <div class="radio-item">
-                                                    <input type="radio" name="categorie" id="categorie-open" value="open" checked>
-                                                    <label for="categorie-open">Open</label>
+                                            <fieldset class="radio-group-container">
+                                                <legend>Votre catégorie</legend>
+                                                <div class="radio-group">
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="categorie" id="categorie-open" value="open" checked>
+                                                        <label for="categorie-open">Open</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="categorie" id="categorie-jeune" value="jeune">
+                                                        <label for="categorie-jeune">Jeune (-20 ans)</label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio-item">
-                                                    <input type="radio" name="categorie" id="categorie-jeune" value="jeune">
-                                                    <label for="categorie-jeune">Jeune (-20 ans)</label>
-                                                </div>
-                                            </div>
+                                            </fieldset>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -225,56 +227,61 @@
                     <div class="contact-info">
                         <h2>Nos coordonnées</h2>
                         <p>La compétition se déroulera à Brussels Expo. Que vous soyez joueur ou spectateur, retrouvez toutes les informations pratiques pour nous rejoindre.</p>
-                        <div class="ci-address">
+                        
+                        <article class="ci-address">
                             <h5>Lieu de la compétition</h5>
-                            <ul>
-                                <li>
-                                    <span class="icon">&#128681;</span>
-                                    <span>Place de la Belgique 1 , 1020 Bruxelles, Belgique</span>
-                                </li>
-                                <li>
-                                    <span class="icon">&#128222;</span>
-                                    <a href="tel:+3226543216" class="ip-tel-link">+32 2 654 32 16</a>
-                                </li>
-                                <li>
-                                    <span class="icon">&#128231;</span>
-                                    <a href="mailto:info.chessbrussels@gmail.com" class="ip-email-link">info.chessbrussels@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ci-address">
-                            <h5>Nos bureaux à Londres</h5>
-                            <ul>
-                                <li>
-                                    <span class="icon">&#128681;</span>
-                                    <span>37 Finsbury Road, Londres, Angleterre</span>
-                                </li>
-                                <li>
-                                    <span class="icon">&#128222;</span>
-                                    <a href="tel:+441234567891" class="ip-tel-link">+44 1234 5678 91</a>
-                                </li>
-                                <li>
-                                    <span class="icon">&#128231;</span>
-                                    <a href="mailto:info.chesslondon@gmail.com" class="ip-email-link">info.chesslondon@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ip-card">
-                            <div class="ip-icon-box"><i class="fa fa-file-text"></i></div>
-                            <h4>Dépôt des dossiers (Secrétariat)</h4>
                             <address>
+                                <p>
+                                    <span class="icon" aria-hidden="true">🚩</span>
+                                    Place de la Belgique 1, 1020 Bruxelles, Belgique
+                                </p>
+                                <p>
+                                    <span class="icon" aria-hidden="true">📞</span>
+                                    <a href="tel:+3226543216" class="ip-tel-link">+32 2 654 32 16</a>
+                                </p>
+                                <p>
+                                    <span class="icon" aria-hidden="true">✉️</span>
+                                    <a href="mailto:info.chessbrussels@gmail.com" class="ip-email-link">info.chessbrussels@gmail.com</a>
+                                </p>
+                            </address>
+                        </article>
+
+                        <article class="ci-address">
+                            <h5>Nos bureaux à Londres</h5>
+                            <address>
+                                <p>
+                                    <span class="icon" aria-hidden="true">🚩</span>
+                                    37 Finsbury Road, Londres, Angleterre
+                                </p>
+                                <p>
+                                    <span class="icon" aria-hidden="true">📞</span>
+                                    <a href="tel:+441234567891" class="ip-tel-link">+44 1234 5678 91</a>
+                                </p>
+                                <p>
+                                    <span class="icon" aria-hidden="true">✉️</span>
+                                    <a href="mailto:info.chesslondon@gmail.com" class="ip-email-link">info.chesslondon@gmail.com</a>
+                                </p>
+                            </address>
+                        </article>
+
+                        <article class="ip-card">
+                            <div class="ip-icon-box">
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                            </div>
+                            <h3>Dépôt des dossiers (Secrétariat)</h3>
+                            
+                            <address class="ip-contact-info">
                                 <p class="ip-detail">Avenue du Club 12, 1150 Bruxelles</p>
                                 <a href="mailto:inscription@club.be" class="ip-email-link">Envoyer par Email</a>
                             </address>
-                            <div class="ip-requirements">
-                               <dl class="ip-requirements">
-                                    <dt><strong>Pièces à fournir :</strong></dt>
-                                    <dd>Certificat médical</dd>
-                                    <dd>Photo d'identité</dd>
-                                    <dd>Formulaire signé</dd>
-                                </dl>
-                            </div>
-                        </div>
+
+                            <dl class="ip-requirements">
+                                <dt>Pièces à fournir :</dt>
+                                <dd>Certificat médical</dd>
+                                <dd>Photo d'identité</dd>
+                                <dd>Formulaire signé</dd>
+                            </dl>
+                        </article>
                     </div>
                 </div>
             </div>
