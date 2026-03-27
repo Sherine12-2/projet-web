@@ -2296,6 +2296,16 @@ style pour checkbox formulaire
 .contact-info .ci-address ul li a:hover {
     color: #dd1515;
 }
+/* Adresses */
+.ip-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.ip-list li::before {
+    content: "- ";
+}
 
 /*Modif contact info*/
 .contact-info .row .col-md-4 {
