@@ -32,6 +32,8 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+
+
 html,
 body {
 	height: 100%;
@@ -2880,6 +2882,13 @@ style pour checkbox formulaire
     max-width: 720px;
     margin: 0 auto;
 }
+.fd-toggle-checkbox:checked + label::after {
+    content: " ▲";
+}
+
+.fd-titre-section::after {
+    content: " ▼";
+}
 
 /* grille classement cachée */
 .fd-grille-classement {
@@ -2961,12 +2970,14 @@ label.fd-titre-section:hover {
 /* bouton profil */
 .fd-bouton-profil {
     margin-top: auto;
-    padding: 8px 15px;
-    background: #ff3b3b;
-    color: white;
-    border-radius: 6px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #ff3b3b, #ff6b6b);
+    font-weight: 500;
+	color: white;              
     text-decoration: none;
-    transition: 0.3s;
+}
+.fd-bouton-profil:visited {
+    color: white;
 }
 
 .fd-bouton-profil:hover {
@@ -3189,4 +3200,54 @@ label.fd-titre-section:hover {
 .fj-lien-joueur {
     display: inline;      /* force le lien à rester sur une ligne */
     white-space: nowrap;  /* empêche le retour à la ligne */
+}
+
+#joueurs, #classement{
+	background-color: #d6d4be;
+}
+
+.fd-titre-section i {
+    margin-right: 10px;
+    color: #ff3b3b;
+}
+.fd-sous-titre {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.fd-intro {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.fd-conteneur {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.fd-classement-item {
+    margin: 10px 0;
+}
+
+.fd-classement-item a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.fd-classement-item a:hover {
+    background: #ff3b3b;
+    color: white;
+}
+
+h2.fj-hidden {
+    visibility: hidden;
 }

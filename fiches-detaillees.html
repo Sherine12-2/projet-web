@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -152,13 +154,31 @@
 
     <!-- Header End -->
 
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/fj-breadcrumb/fj-echec-v2.jpeg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-text">
+                        <h2 class="fd-sous-titre">Joueurs & Classements</h2>
+                        <p class="fd-intro">
+                            Découvrez nos joueurs et accédez à leurs fiches détaillées ainsi qu'aux classsements du tournois.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
     <section id="joueurs" class="fd-section-joueurs">
+        <h2 class="fj-hidden">Fiches des joueurs</h2>
         <div class="fd-conteneur">
 
-            <input type="checkbox" id="toggle-joueurs" class="fd-toggle-checkbox" />
+            <input type="checkbox" id="toggle-joueurs" class="fd-toggle-checkbox" checked >
 
             <label for="toggle-joueurs" class="fd-titre-section">
-                Les joueurs ▼
+                 <i class="fa-solid fa-chess"></i> Les joueurs 
             </label>
 
             <div class="fd-grille-joueurs">
@@ -214,9 +234,7 @@
 
             </div>
 
-            <p class="fd-description">
-                Retrouvez la liste complète des joueurs en cliquant sur le bouton ci-dessus.
-            </p>
+            
 
         </div>
     </section>
@@ -224,22 +242,24 @@
 
                 <!--Section classement/....-->
     <section id="classement" class="fd-section-classement">
+        <h2 class="fj-hidden">Listes des classements</h2>
         <div class="fd-conteneur">
-            <input type="checkbox" id="toggle-classement" class="fd-toggle-checkbox" />
+            <input type="checkbox" id="toggle-classement" class="fd-toggle-checkbox" checked>
 
             <label for="toggle-classement" class="fd-titre-section">
-                Les classements ▼
+                <i class="fa-solid fa-ranking-star"></i> Les classements
             </label>
              <div class="fd-grille-classement">
 
                 <!--Classements-->
-                <p><a href="fj-classement2026.html" class="fj-lien-joueur">2026</a></p>
-                <p><a href="fj-classement2025.html" class="fj-lien-joueur">2025</a></p>
-                <p><a href="fj-classement2024.html" class="fj-lien-joueur">2024</a></p>
+                <div class="fd-classement-item">
+                    <p><a href="fj-classement2026.html" class="fj-lien-joueur">🏆 Classements Tournois 2026</a></p>
+                    <p><a href="fj-classement2025.html" class="fj-lien-joueur">🏆 Classements Tournois 2025</a></p>
+                    <p><a href="fj-classement2024.html" class="fj-lien-joueur">🏆 Classements Tournois 2024</a></p>
+                </div>
                 
             </div>
 
-        <p>Retrouvez la liste complète du classement des tournois en cliquant sur le bouton ci-dessus.</p>
         </div>
     </section>
 
