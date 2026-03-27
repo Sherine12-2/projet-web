@@ -2103,7 +2103,11 @@ ol {
 
 /* 1. ESPACEMENTS ET TITRES */
 .contact-section, .ip-section {
-    padding: 90px 0 70px;
+	padding: 90px 0 70px;
+}
+.contact-section .row {
+	display: flex;
+	align-items: stretch;
 }
 
 .contact-form h2, .contact-info h2, .ip-section-title h2 {
@@ -2130,6 +2134,7 @@ ol {
 .contact-form textarea,
 .ip-input { 
     width: 100%;
+    max-width: 600px;
     height: 46px;
     border: 1px solid #d9d9d9;
     border-radius: 2px;
@@ -2319,6 +2324,29 @@ address a:hover {
     color: #636363;
 }
 
+.contact-info-box {
+    height: 100%; /* Elle prend toute la hauteur de la colonne */
+    background: #f9f9f9; /* Un gris très léger pour différencier du formulaire */
+    border: 1px solid #d9d9d9;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+/* Espacement des blocs d'adresses du bas */
+.ci-address {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    height: 100%;
+    transition: 0.3s;
+}
+.ci-address h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #151618;
+}
+
 /* 5. LISTES ET BOUTONS SPÉCIFIQUES */
 .ip-requirements, .ip-transport-list {
     text-align: left;
@@ -2340,6 +2368,45 @@ address a:hover {
     position: absolute; 
     left: 0; 
     font-weight: bold;
+}
+/* Amélioration de la liste de documents (dt/dd) */
+/* .ip-requirements dt {
+    font-weight: 700;
+    color: #151618;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.ip-requirements dd {
+    margin-left: 0;
+    color: #dd1515;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #d9d9d9;
+} */
+
+/* Une liste simple avec des puces rouges pour rester dans le thème */
+.ip-doc-simple-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.ip-doc-simple-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #636363;
+}
+
+.ip-doc-simple-list li::before {
+    content: "\f00c"; /* Une icône "check" FontAwesome */
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    color: #dd1515;
 }
 
 .ip-stib-btn {
