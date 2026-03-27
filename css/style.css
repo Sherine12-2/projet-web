@@ -2094,12 +2094,8 @@ ol {
 	width: 100%;
 }
 
-/*---------------------
-  Contact Section
------------------------*/
-
 /* ==========================================================================
-   MODULE UNIFIÉ : 4 PAGES (CONTACT, INSCRIPTION, INFOS, ÉQUIPE)
+   4 PAGES (CONTACT, INSCRIPTION, INFOS, ÉQUIPE)
    ========================================================================== */
 
 /* 1. ESPACEMENTS ET TITRES */
@@ -2219,16 +2215,22 @@ ol {
 }
 
 address { 
-	font-style: normal; }
+	font-style: normal; 
+	margin-top: 15px;
+}
 
-.ip-email-link, .ip-tel-link, .contact-info a {
-    color: #dd1515;
-    font-weight: 700;
+.ip-email-link, .ip-tel-link, .contact-info a, address a {
+    color: #dd1515 !important;
+    font-weight: 500;
     text-decoration: none;
 }
 
-.ip-email-link:hover { 
-	text-decoration: underline; }
+.ip-email-link:hover,
+.ip-tel-link:hover,
+address a:hover { 
+	text-decoration: underline; 
+	color: #151618;
+}
 
 /* Pour que les liens dans <address> ne soient pas bleus soulignés par défaut */
 address {
