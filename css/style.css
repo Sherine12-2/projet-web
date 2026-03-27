@@ -1,6 +1,6 @@
 /******************************************************************
-  Template Name: Specer
-  Description: Specer Sport HTML Template
+  Template Name: Chess
+  Description: Chess Sport HTML Template
   Author: Colorlib
   Author URI: http://colorlib.com
   Version: 1.0
@@ -49,7 +49,7 @@ body {
     height: 100%;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -82,6 +82,7 @@ p {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 input:focus,
@@ -1292,14 +1293,7 @@ ol {
     background: var(--couleur-accent);
 }
 
-/*---------------------
-  Pied de page
------------------------*/
 
-.footer-section {
-    padding-top: 60px;
-    border-top: 4px solid var(--couleur-accent);
-}
 
 .fs-logo {
     margin-bottom: 30px;
@@ -2423,7 +2417,110 @@ ol {
 .btn-twitter  { background: #1da1f2; }
 .btn-whatsapp { background: #25d366; }
 
-/* Footer réseaux sociaux */
+/*---------------------
+  Pied de page CORRIGÉ
+-----------------------*/
+
+.footer-section {
+    padding-top: 60px;
+    border-top: 4px solid var(--couleur-accent);
+}
+
+.fs-logo {
+    margin-bottom: 30px;
+}
+
+.fs-logo .logo {
+    margin-bottom: 30px;
+}
+
+.fs-logo .logo a {
+    display: inline-block;
+}
+
+.fs-logo ul {
+    margin-bottom: 22px;
+}
+
+.fs-logo ul li {
+    font-size: 16px;
+    color: #ababab;
+    line-height: 36px;
+    position: relative;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.fs-logo ul li i {
+    font-size: 16px;
+    color: var(--couleur-accent);
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.fs-widget {
+    margin-bottom: 30px;
+}
+
+.fs-widget h3 {
+    color: var(--couleur-accent);
+    font-weight: 500;
+    margin-bottom: 26px;
+    font-size: 20px;
+}
+
+/* 🔥 FIX ALIGNEMENT */
+.fs-widget .fw-links {
+    width: 100%;
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fs-widget .fw-links li {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.fs-widget .fw-links li a {
+    font-size: 16px;
+    color: #b5b8be;
+    line-height: 36px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.fs-widget .fw-links li a:hover {
+    color: var(--couleur-accent);
+}
+
+.fs-widget .fw-links li i {
+    width: 15px;
+    text-align: center;
+}
+
+/* Articles */
+.fs-widget .fw-item {
+    margin-bottom: 18px;
+}
+
+.fs-widget .fw-item h4 {
+    margin-bottom: 8px;
+}
+
+.fs-widget .fw-item h4 a {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* Réseaux */
 .reseaux-footer {
     margin-top: 20px;
 }
@@ -2454,7 +2551,7 @@ ol {
 .rs-instagram { background: #e1306c; }
 .rs-youtube   { background: #ff0000; }
 
-/* Droits d'auteur footer */
+/* Droits d'auteur */
 .droits-auteur {
     margin-top: 30px;
     padding-top: 20px;
@@ -2467,6 +2564,8 @@ ol {
     font-size: 13px;
     margin: 0;
 }
+
+
 
 /* Fil d'Ariane */
 nav[aria-label="Fil d'ariane"] {
