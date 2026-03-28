@@ -2242,7 +2242,7 @@ address {
 .ip-card:hover .ip-icon-box { 
 	background: #c9a227; }
 .ip-card:hover .ip-icon-box i { 
-	color: #ffffff; }
+	color: #333; }
 
 /* 4. TEXTES, ADRESSES ET LIENS */
 
@@ -2306,6 +2306,25 @@ address {
     gap: 12px;
 }
 
+/* Nettoyage des liens dans la section contact */
+.ci-address address a {
+    color: inherit; /* Garde la couleur du texte parent */
+    text-decoration: none; /* Enlève le soulignement */
+    transition: 0.3s;
+}
+
+.ci-address address a:hover {
+    color: #8b4513; /* Ton marron au survol */
+    text-decoration: underline; /* Optionnel : remet le souligné juste au survol */
+}
+
+/* Optionnel : style pour les icônes pour les rendre plus pro */
+.ci-address .icon {
+    margin-right: 10px;
+    display: inline-block;
+    width: 20px;
+}
+
 /* 5. LISTES ET BOUTONS SPÉCIFIQUES */
 .ip-requirements, .ip-transport-list {
     text-align: left;
@@ -2366,29 +2385,50 @@ address {
 
 .ip-stib-btn:hover { 
 	background: #c9a227;
-	color: #fff; }
+	color: black; }
 
 /* 6. ÉQUIPE */
 .team-item { 
 	text-align: center; 
-	border: 1px solid #eee; 
+	border: 1px solid #8b4513; 
 	padding: 30px 20px; 
 	border-radius: 10px; 
-	transition: 0.3s; 
-	margin-bottom: 30px;}
+	transition: all 0.4s ease; 
+	margin-bottom: 30px;
+    background: #fff;
+}
+
+.team-item:hover {
+    transform: translateY(-10px); /* La carte monte */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Petite ombre portée */
+    border-color: #c9a227;
+}
+
 .team-photo img { 
 	border-radius: 50%; 
 	width: 140px; 
 	height: 140px; 
 	object-fit: cover; 
 	border: 3px solid #8b4513; 
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
+    transition: transform 0.4s ease; 
 }
+/* Zoom léger sur la photo quand on survole la carte */
+.team-item:hover .team-photo img {
+    transform: scale(1.1);
+    border: 3px solid #c9a227;
+}
+
 .team-role { 
 	color: #8b4513; 
 	font-weight: 700; 
 	text-transform: uppercase; 
 	font-size: 12px; 
+    transition: letter-spacing 0.3s;
+}
+
+.team-item:hover .team-role {
+    letter-spacing: 1px;
 }
 
 /* 7. SPECIFIQUE INSCRIPTION (RADIOS & DOCS) */
