@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -83,6 +81,10 @@
 
     <!-- Header Section Begin -->
     <header class="header-section">
+        <!-- H1 caché : nom du site, visible pour les lecteurs d'écran -->
+        <h1 class="sr-only">Grand Tournoi d'Échecs International</h1>
+
+        <!-- Top Header -->
         <div class="header__top">
             <div class="container">
                 <div class="row">
@@ -97,22 +99,24 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="ht-links">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-vimeo"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Navigation Header -->
         <div class="header__nav">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="logo">
-                            <a href="./index.html"><img src="img/logo.png" alt="Drapeau"></a>
+                            <a href="./index.html"><img src="img/logo.png" alt="Logo Grand Tournoi Échecs"></a>
                         </div>
                     </div>
                     <div class="col-lg-10">
@@ -132,7 +136,7 @@
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="./blog.html">Blog</a></li>
-                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="./blog-details.html">Détails</a></li>
                                         <li><a href="#">Calendrier</a></li>
                                         <li><a href="#">Résultats</a></li>
                                     </ul>
@@ -151,8 +155,7 @@
             </div>
         </div>
     </header>
-
-    <!-- Header End -->
+    <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/hero/hero-1.jpg">
@@ -160,10 +163,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="bs-text">
-                        <h2 class="fd-sous-titre">Joueurs & Classements</h2>
-                        <p class="fd-intro">
-                            Découvrez nos joueurs et accédez à leurs fiches détaillées ainsi qu'aux classsements du tournois.
-                        </p>
+                        <h2 class="hero-titre">Joueurs & Classements</h2>       
                     </div>
                 </div>
             </div>
@@ -230,6 +230,54 @@
                     <p class="fd-pays"><span class="fi fi-fr"></span> France</p>
                     <p class="fd-fide">FIDE ID : 12573981</p>
                     <a href="fj-firouzjaalireza.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur">
+                    <img src="img/joueurs/gukesh.jpg" alt="Dommaraju Gukesh">
+                    <h3>Dommaraju Gukesh</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Inde</p>
+                    <p class="fd-fide">FIDE ID : 46616543</p>
+                    <a href="fj-gukeshd.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur">
+                    <img src="img/joueurs/pranav.jpg" alt="Pranav Venkatesh">
+                    <h3>Pranav Venkatesh</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Inde</p>
+                    <p class="fd-fide">FIDE ID : 25060783</p>
+                    <a href="fj-pranav.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur">
+                    <img src="img/joueurs/zemlyanskii.jpg" alt="Zemlyanskii Ivan">
+                    <h3>Zemlyanskii Ivan</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Russie</p>
+                    <p class="fd-fide">FIDE ID : 24249971</p>
+                    <a href="fj-zemlyanskii.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur">
+                    <img src="img/joueurs/xiao.jpg" alt="Xiao Tong">
+                    <h3>Xiao Tong</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Chine</p>
+                    <p class="fd-fide">FIDE ID : 8622388</p>
+                    <a href="fj-xiao.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur">
+                    <img src="img/joueurs/xue.jpg" alt="Xue Haowen">
+                    <h3>Xue Haowen</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Chine</p>
+                    <p class="fd-fide">FIDE ID : 8625492</p>
+                    <a href="fj-xue.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur">
+                    <img src="img/joueurs/pingin.png" alt="Pingin Artem">
+                    <h3>Pingin Artem</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Russie</p>
+                    <p class="fd-fide">FIDE ID : 44193645</p>
+                    <a href="fj-pingin.html" class="fd-bouton-profil">Voir profil</a>
                 </div>
 
             </div>

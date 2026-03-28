@@ -3072,7 +3072,7 @@ label.fd-titre-section:hover {
 /* titres */
 .fd-titres h3 {
     margin-bottom: 10px;
-    color: #8c5c2b;
+    color: black;
 }
 
 /* liste titres */
@@ -3217,3 +3217,8 @@ label.fd-titre-section:hover {
     text-align: center;
     color: #8c5c2b;
 }
+
+h2.fj-hidden {
+    display: none !important;
+}
+
