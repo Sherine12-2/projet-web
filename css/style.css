@@ -2339,7 +2339,7 @@ address {
     display: table;
     margin-left: auto;
     margin-right: auto;
-    transform: uppercase;
+    text-transform: uppercase;
 }
 .contact-info-box p {
     color: #8b4513;
