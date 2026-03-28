@@ -2133,7 +2133,12 @@ address {
 }
 .contact-section .row {
 	display: flex;
-	align-items: stretch;
+    align-items: stretch;
+}
+.contact-section .row.match-height {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .contact-form h2, .contact-info h2, .ip-section-title h2 {
@@ -2160,7 +2165,6 @@ address {
 .contact-form textarea,
 .ip-input { 
     width: 100%;
-    max-width: 600px;
     height: 46px;
     border: 1px solid #d9d9d9;
     border-radius: 2px;
@@ -2246,83 +2250,48 @@ address {
 
 /* 4. TEXTES, ADRESSES ET LIENS */
 
-/* --- 4. TEXTES ET ADRESSES (ISOLÉS) --- */
-
-/* On cible uniquement tes sections pour ne pas impacter ta collègue */
-.contact-info address, .ip-section address, .contact-info-box address {
-    font-style: normal;
-    margin-top: 15px;
-}
-
-.contact-info address p, .ip-section address p {
-    font-size: 14px;
-    color: #636363;
-    line-height: 26px;
-    margin-bottom: 10px;
-}
-
-/* Styles des liens dans tes adresses */
-.contact-info address a, .ip-section address a, .ip-email-link, .ip-tel-link {
-    color: #8b4513 !important;
-    font-weight: 500;
+.ci-address address a, 
+.contact-info address a, 
+.ip-email-link, 
+.ip-tel-link {
+    color: #151618; 
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-.contact-info address a:hover, .ip-section address a:hover, .ip-email-link:hover {
+.ci-address address a:hover, 
+.contact-info address a:hover, 
+.ip-email-link:hover, 
+.ip-tel-link:hover {
+    color: #8b4513; 
     text-decoration: underline;
-    color: #151618;
 }
 
-/* --- Blocs d'adresses spécifiques (Cartes/Box) --- */
+.ci-address .icon {
+    margin-right: 10px;
+    display: inline-block;
+    color: #8b4513;
+}
 
-.contact-info .ci-address {
+/* Ce style donnera le même look "encadré" aux deux pages */
+.ip-contact-block {
     background: #ffffff;
     padding: 30px;
     border: 1px solid #d9d9d9;
     border-radius: 2px;
     margin-bottom: 25px;
-    height: 100%;
     transition: 0.3s;
 }
 
-.contact-info .ci-address h5, .ci-address h4 {
+.ip-contact-block h3 {
     color: #151618;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #1a1a1a;
+    border-bottom: 2px solid #8b4513; /* Le trait marron signature */
     display: inline-block;
-}
-
-.contact-info .ci-address ul li {
-    list-style: none;
-    font-size: 14px;
-    color: #636363;
-    margin-bottom: 12px !important;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-/* Nettoyage des liens dans la section contact */
-.ci-address address a {
-    color: inherit; /* Garde la couleur du texte parent */
-    text-decoration: none; /* Enlève le soulignement */
-    transition: 0.3s;
-}
-
-.ci-address address a:hover {
-    color: #8b4513; /* Ton marron au survol */
-    text-decoration: underline; /* Optionnel : remet le souligné juste au survol */
-}
-
-/* Optionnel : style pour les icônes pour les rendre plus pro */
-.ci-address .icon {
-    margin-right: 10px;
-    display: inline-block;
-    width: 20px;
 }
 
 /* 5. LISTES ET BOUTONS SPÉCIFIQUES */
@@ -2464,6 +2433,31 @@ address {
     margin-bottom: 20px;
     border-bottom: 2px solid #8b4513;
     display: inline-block;
+}
+
+/* --- 8. AJUSTEMENTS MISE EN PAGE INSCRIPTION --- */
+
+/* On s'assure que la colonne de droite respire */
+.contact-info-wrapper {
+    margin-top: 40px;
+}
+
+/* Espacement pour le titre secondaire à droite */
+.contact-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #151618;
+    display: block;
+}
+
+/* On aère les blocs d'adresses pour qu'ils ne soient pas collés */
+.contact-info .ci-address {
+    margin-bottom: 30px; 
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #fafafa; /* Très léger gris pour les détacher du fond */
 }
 
 /*---------------------
