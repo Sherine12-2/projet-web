@@ -2298,33 +2298,11 @@ address {
 }
 
 /* 5. LISTES ET BOUTONS SPÉCIFIQUES */
-.ip-requirements, .ip-transport-list {
-    text-align: left;
-    list-style: none;
-    padding: 15px 0 0;
-    border-top: 1px solid #eee;
-    margin-top: 15px;
-}
 
-.ip-requirements dd, .ip-transport-list li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 5px;
-}
-
-.ip-requirements dd::before, .ip-transport-list li::before {
-    content: "•"; 
-    color: #8b4513; 
-    position: absolute; 
-    left: 0; 
-    font-weight: bold;
-}
-
-/* Une liste simple avec des puces rouges pour rester dans le thème */
 .ip-doc-simple-list {
     list-style: none;
     padding-left: 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .ip-doc-simple-list li {
@@ -2336,11 +2314,23 @@ address {
 }
 
 .ip-doc-simple-list li::before {
-    content: "\f00c"; /* Une icône "check" FontAwesome */
+    content: "\f00c"; /* icône "check" FontAwesome */
     font-family: FontAwesome;
     position: absolute;
     left: 0;
     color: #8b4513;
+}
+.contact-info-box {
+    padding: 30px;
+    border: 1px solid #8b4513;
+    border-radius: 50px;
+    background: #ffffff;
+}
+.contact-info-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8b4513;
+    display: inline-block;
 }
 
 .ip-stib-btn {
@@ -2444,18 +2434,7 @@ address {
     width: 18px;
     height: 18px;
 }
-.contact-info-box {
-    padding: 30px;
-    border: 1px solid #d9d9d9;
-    border-radius: 2px;
-    background: #ffffff;
-}
-.contact-info-box h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #8b4513;
-    display: inline-block;
-}
+
 
 /* --- 8. AJUSTEMENTS MISE EN PAGE INSCRIPTION --- */
 
@@ -2479,7 +2458,8 @@ address {
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 4px;
-    background: #fafafa; /* Très léger gris pour les détacher du fond */
+    background: #f5f0e8;
+    border-top: 4px solid #c9a227;
 }
 
 /*---------------------
