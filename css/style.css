@@ -2149,11 +2149,12 @@ address {
 }
 
 /* 2. LE FORMULAIRE (Contact Visiteur + Inscription) */
-.contact-form .group-in {
+.contact-form .group-in,
+.ip-group-in {
     margin-bottom: 25px;
 }
-
-.contact-form .group-in label {
+.contact-form .group-in label,
+.ip-label {
     display: block;
     font-size: 16px;
     color: #151618;
@@ -2165,9 +2166,9 @@ address {
 .contact-form textarea,
 .ip-input { 
     width: 100%;
-    height: 46px;
-    border: 1px solid #d9d9d9;
-    border-radius: 2px;
+    height: 50px;
+    border: 1px solid #c9a227 ;
+    border-radius: 4px;
     font-size: 14px;
     color: #151618;
     padding-left: 20px;
@@ -2191,7 +2192,8 @@ address {
     outline: none;
 }
 
-.contact-form button {
+.contact-form button,
+.ip-submit-btn {
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
@@ -2205,7 +2207,8 @@ address {
     display: inline-block;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.ip-submit-btm:hover {
     background: #c9a227;
 }
 
