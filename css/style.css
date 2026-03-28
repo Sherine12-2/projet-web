@@ -2360,8 +2360,23 @@ address {
 	color: black; }
 
 /* 6. ÉQUIPE */
-
-
+.row.mt-5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-item {
+    flex: 1; /* C'est ce "1" qui force la carte à remplir toute la hauteur */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid #8b4513;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    text-align: center;
+    /* On enlève le margin-bottom d'ici car il est géré par l'article au-dessus */
+    margin-bottom: 0; 
+}
 .team-item { 
 	text-align: center; 
 	border: 1px solid #8b4513; 
