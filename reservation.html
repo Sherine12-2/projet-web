@@ -7,7 +7,7 @@
     <meta name="keywords" content="Specer, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tarifs & billeterie - Compétition d'échecs</title>
+    <title>Réservation - Compétition d'échecs</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
@@ -71,10 +71,11 @@
 </ul>
         <div id="mobile-menu-wrap"></div>
     </div>
-
     <!-- Offcanvas Menu Section End -->
+
 <!--header begins-->
-    <header class="header-section">
+
+   <header class="header-section">
     <div class="header__top">
         <div class="container">
             <div class="row">
@@ -137,86 +138,49 @@
         </div>
     </div>
 </header>
-<!--header ends-->
+<!-- End header-->
 
     <!-- Tarifs -->
 
-    <section class="pricing-section spad" style="padding: 60px 0; color: black; background-color: #fff;">
-    <div class="container">
-        <div class="section-title text-center">
-            <h2 style="color: black; text-transform: uppercase;">Tarifs & Billetterie</h2>
-            <p style="color: black;">RÉSERVEZ VOS PLACES POUR ASSISTER À LA COMPÉTITION D'ÉCHECS 2026</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div style="border: 1px solid #000; padding: 25px; text-align: center; margin-bottom: 30px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h4 style="color: black; font-weight: bold; margin-bottom: 20px;">TICKET JOURNALIER</h4>
-                        <h2 style="color: black; margin-bottom: 25px;">10€</h2>
-                        
-                        <div style="text-align: left;">
-                            <details style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                                <summary style="cursor: pointer; font-weight: bold; list-style: none; outline: none;">ACCES GRADINS</summary>
-                                <p style="margin-top: 10px; font-size: 14px; color: #333;">Cette option vous permettra d'assisster aux matchs sur une place assise numérotée en tribune.</p>
-                            </details>
-
-                            <details style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                                <summary style="cursor: pointer; font-weight: bold; list-style: none; outline: none;">ATELIERS & ANALYSES</summary>
-                                <p style="margin-top: 10px; font-size: 14px; color: #333;">Participez aux sessions d'analyse après les matchs avec des experts pour comprendre les stratégies.</p>
-                            </details>
+   <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="contact-form" style="background: #f4f4f4; padding: 40px; border-radius: 8px;">
+                        <div class="section-title text-center">
+                            <h2 style="color: #000;">RÉSERVER VOS BILLETS</h2>
+                            <p>Remplissez le formulaire pour valider votre commande.</p>
                         </div>
-                    </div>
-                    <a href="./reservation.html" style="background-color: #f63838; color: white; padding: 12px 0; text-decoration: none; display: block; font-weight: bold; width: 100%; margin-top: 20px;">Réserver</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div style="border: 1px solid #000; padding: 25px; text-align: center; margin-bottom: 30px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h4 style="color: black; font-weight: bold; margin-bottom: 20px;">PASS EVENEMENT</h4>
-                        <h2 style="color: black; margin-bottom: 25px;">40€</h2>
                         
-                        <div style="text-align: left;">
-                            <details style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                                <summary style="cursor: pointer; font-weight: bold; list-style: none; outline: none;">ACCES COMPLET</summary>
-                                <p style="margin-top: 10px; font-size: 14px; color: #333;">Entrée illimitée pour les 3 jours de la compétition, incluant la cérémonie de clôture.</p>
-                            </details>
-
-                            <details style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                                <summary style="cursor: pointer; font-weight: bold; list-style: none; outline: none;">MERCH</summary>
-                                <p style="margin-top: 10px; font-size: 14px; color: #333;">Recevez un kit exclusif "Échecs 2026" comprenant un carnet de notation et un badge visiteur.</p>
-                            </details>
-                        </div>
+                        <form action="./confirmation.html">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Nom" required style="width: 100%; margin-bottom: 20px; padding: 12px; border: 1px solid #ddd;">
+                                </div>
+                                 <div class="col-lg-6">
+                                    <input type="text" placeholder="Prénom" required style="width: 100%; margin-bottom: 20px; padding: 12px; border: 1px solid #ddd;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" placeholder="Email" required style="width: 100%; margin-bottom: 20px; padding: 12px; border: 1px solid #ddd;">
+                                </div>
+                                <div class="col-lg-12">
+                                    <select style="width: 100%; margin-bottom: 20px; padding: 12px; border: 1px solid #ddd;">
+                                        <option value="journalier">Ticket Journalier - 10€</option>
+                                        <option value="pass">Pass Événement - 40€</option>
+                                        <option value="reduit">Tarif Réduit - 5€</option>
+                                    </select>
+                                    <input type="number" placeholder="Nombre de places" min="1" max="10" required style="width: 100%; margin-bottom: 20px; padding: 12px; border: 1px solid #ddd;">
+                                    <button type="submit" style="background: #f63838; color: #fff; border: none; padding: 15px 30px; font-weight: bold; width: 100%; cursor: pointer;">
+                                        CONFIRMER LA RÉSERVATION
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <a href="./reservation.html" style="background-color: #f63838; color: white; padding: 12px 0; text-decoration: none; display: block; font-weight: bold; width: 100%; margin-top: 20px;">Réserver</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div style="border: 1px solid #000; padding: 25px; text-align: center; margin-bottom: 30px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h4 style="color: black; font-weight: bold; margin-bottom: 20px;">TARIF REDUIT</h4>
-                        <h2 style="color: black; margin-bottom: 25px;">5€</h2>
-                        
-                        <div style="text-align: left;">
-                            <details style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                                <summary style="cursor: pointer; font-weight: bold; list-style: none; outline: none;">ELIGIBILITE</summary>
-                                <p style="margin-top: 10px; font-size: 14px; color: #333;">Ce tarif ne s'applique qu'aux étudiants, aux mineurs et aux seniors de plus de 65 ans.</p>
-                            </details>
-
-                            <details style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-                                <summary style="cursor: pointer; font-weight: bold; list-style: none; outline: none;">JUSTIFICATIF</summary>
-                                <p style="margin-top: 10px; font-size: 14px; color: #333;">Une pièce d'identité ou une carte d'étudiant valide sera demandée au contrôle d'accès.</p>
-                            </details>
-                        </div>
-                    </div>
-                    <a href="./reservation.html" style="background-color: #f63838; color: white; padding: 12px 0; text-decoration: none; display: block; font-weight: bold; width: 100%; margin-top: 20px;">Réserver</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- footer -->
 
@@ -302,8 +266,7 @@
             </div>
         </div>
     </footer>
-<!--end of footer-->
-
+<!--end footer-->
    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
