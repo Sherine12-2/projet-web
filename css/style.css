@@ -2297,20 +2297,23 @@ address {
     display: inline-block;
 }
 
-/* 5. LISTES ET BOUTONS SPÉCIFIQUES */
+/* 5. LISTES ET BOUTONS */
 
 .ip-doc-simple-list {
     list-style: none;
     padding-left: 0;
     margin-top: 30px;
+    display: inline-block;
+    text-align: left;
 }
 
 .ip-doc-simple-list li {
     position: relative;
     padding-left: 25px;
     margin-bottom: 15px;
-    font-size: 15px;
-    color: #636363;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8b4513;
 }
 
 .ip-doc-simple-list li::before {
@@ -2321,16 +2324,26 @@ address {
     color: #8b4513;
 }
 .contact-info-box {
-    padding: 30px;
-    border: 1px solid #8b4513;
+    padding: 50px;
+    border: 2px solid #8b4513;
     border-radius: 50px;
-    background: #ffffff;
+    background: #f9e9be;
+    text-align: center;
 }
 .contact-info-box h3 {
+    color: #8b4513;
     font-size: 20px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #8b4513;
-    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #8b4513;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    transform: uppercase;
+}
+.contact-info-box p {
+    color: #8b4513;
+    font-size: 18px;
 }
 
 .ip-stib-btn {
@@ -2358,7 +2371,7 @@ address {
     flex: 1; /* C'est ce "1" qui force la carte à remplir toute la hauteur */
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: #d4b483;
     padding: 30px 20px;
     border: 1px solid #8b4513;
     border-radius: 10px;
@@ -2374,7 +2387,7 @@ address {
 	border-radius: 10px; 
 	transition: all 0.4s ease; 
 	margin-bottom: 30px;
-    background: #fff;
+    background: #f5f0e8;
 }
 
 .team-item:hover {
