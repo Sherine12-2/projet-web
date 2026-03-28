@@ -2401,6 +2401,8 @@ address {
 	border: 3px solid #8b4513; 
 	margin-bottom: 20px;
     transition: transform 0.4s ease; 
+    object-fit: cover;
+    object-position: 50% 5%;/*Ajuste position (Axe X / Axe Y) */
 }
 
 .team-item:hover .team-photo img {
