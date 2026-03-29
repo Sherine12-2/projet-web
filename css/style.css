@@ -2480,6 +2480,7 @@ address {
 
 /* On aère les blocs d'adresses pour qu'ils ne soient pas collés */
 .contact-info .ci-address {
+    margin-top: 50px;
     margin-bottom: 30px; 
     padding: 20px;
     border: 1px solid #eee;
