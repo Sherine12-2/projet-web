@@ -2449,7 +2449,8 @@ address {
 }
 .radio-item {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
+    height: 10px;
     gap: 10px;
     cursor: pointer;
     font-size: 14px;
