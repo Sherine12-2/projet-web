@@ -2298,9 +2298,15 @@ address {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #8b4513;
     display: inline-block;
+}
+.ip-contact-block address p {
+    margin-bottom: 8px;
+    margin-top: 0;
+    display: flex;         /* Pour bien aligner l'icône et le texte sur une seule ligne */
+    align-items: center;
 }
 
 /* 5. LISTES ET BOUTONS */
