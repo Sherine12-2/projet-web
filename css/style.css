@@ -2177,6 +2177,12 @@ address {
     display: block;
     background: #ffffff;
 }
+/* On cible uniquement les sélecteurs de fichiers dans tes boîtes */
+.group-in input[type="file"] {
+    margin-top: 10px;    /* Crée de l'espace au-dessus de l'input */
+    padding-top: 8px;    /* Ajuste l'espace intérieur si nécessaire */
+    display: block;      /* Force l'input à aller à la ligne sous le label */
+}
 
 .contact-form textarea, .ip-textarea {
     height: 140px !important;
@@ -2437,7 +2443,7 @@ address {
 }
 .radio-item {
     display: flex;
-    align-items: center;
+    align-items: top;
     gap: 10px;
     cursor: pointer;
     font-size: 14px;
