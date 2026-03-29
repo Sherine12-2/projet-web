@@ -2449,7 +2449,8 @@ address {
 }
 .radio-item {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
+    height: 10px;
     gap: 10px;
     cursor: pointer;
     font-size: 14px;
@@ -2479,6 +2480,7 @@ address {
 
 /* On aère les blocs d'adresses pour qu'ils ne soient pas collés */
 .contact-info .ci-address {
+    margin-top: 50px;
     margin-bottom: 30px; 
     padding: 20px;
     border: 1px solid #eee;
