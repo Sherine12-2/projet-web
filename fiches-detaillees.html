@@ -181,10 +181,16 @@
                  <i class="fa-solid fa-chess"></i> Les joueurs 
             </label>
 
+            <div class="fd-filtres">
+                <button onclick="filtrerJoueurs('tous')">Tous</button>
+                <button onclick="filtrerJoueurs('open')">Open</button>
+                <button onclick="filtrerJoueurs('junior')">Junior</button>
+            </div>
+
             <div class="fd-grille-joueurs">
 
                 <!-- Carte joueur -->
-                <div class="fd-carte-joueur">
+                <div class="fd-carte-joueur" data-categorie="open">
                     <img src="img/joueurs/magnus-carlsen.jpeg" alt="Magnus Carlsen">
                     <h3>Magnus Carlsen</h3>
                     <p class="fd-pays"><span class="fi fi-no"></span> Norvège</p>
@@ -192,55 +198,7 @@
                     <a href="fj-magnuscarlsen.html" class="fd-bouton-profil">Voir profil</a>
                 </div>
 
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/fabiano-caruana.jpg" alt="Fabiano Caruana">
-                    <h3>Fabiano Caruana</h3>
-                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
-                    <p class="fd-fide">FIDE ID : 2020009</p>
-                    <a href="fj-fabianocaruana.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/hikaru-nakamura.jpeg" alt="Hikaru Nakamura">
-                    <h3>Hikaru Nakamura</h3>
-                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
-                    <p class="fd-fide">FIDE ID : 2016192</p>
-                    <a href="fj-hikarunakamura.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/vincent-keymer.jpeg" alt="Vincent Keymer">
-                    <h3>Vincent Keymer</h3>
-                    <p class="fd-pays"><span class="fi fi-de"></span> Allemagne</p>
-                    <p class="fd-fide">FIDE ID : 12940690</p>
-                    <a href="fj-vincentkeymer.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/nodirbek-abdusattorov.jpeg" alt="Nodirbek Abdusattorov">
-                    <h3>Nodirbek Abdusattorov</h3>
-                    <p class="fd-pays"><span class="fi fi-uz"></span> Ouzbékistan</p>
-                    <p class="fd-fide">FIDE ID : 14204118</p>
-                    <a href="fj-nodirbekabdusattorov.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/alireza-firouzja.jpg" alt="Alireza Firouzja">
-                    <h3>Alireza Firouzja</h3>
-                    <p class="fd-pays"><span class="fi fi-fr"></span> France</p>
-                    <p class="fd-fide">FIDE ID : 12573981</p>
-                    <a href="fj-firouzjaalireza.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/gukesh.jpg" alt="Dommaraju Gukesh">
-                    <h3>Dommaraju Gukesh</h3>
-                    <p class="fd-pays"><span class="fi fi-fr"></span> Inde</p>
-                    <p class="fd-fide">FIDE ID : 46616543</p>
-                    <a href="fj-gukeshd.html" class="fd-bouton-profil">Voir profil</a>
-                </div>
-
-                <div class="fd-carte-joueur">
+                <div class="fd-carte-joueur" data-categorie="junior">
                     <img src="img/joueurs/pranav.jpg" alt="Pranav Venkatesh">
                     <h3>Pranav Venkatesh</h3>
                     <p class="fd-pays"><span class="fi fi-fr"></span> Inde</p>
@@ -248,15 +206,15 @@
                     <a href="fj-pranav.html" class="fd-bouton-profil">Voir profil</a>
                 </div>
 
-                <div class="fd-carte-joueur">
-                    <img src="img/joueurs/zemlyanskii.jpg" alt="Zemlyanskii Ivan">
-                    <h3>Zemlyanskii Ivan</h3>
-                    <p class="fd-pays"><span class="fi fi-fr"></span> Russie</p>
-                    <p class="fd-fide">FIDE ID : 24249971</p>
-                    <a href="fj-zemlyanskii.html" class="fd-bouton-profil">Voir profil</a>
+                <div class="fd-carte-joueur" data-categorie="open">
+                    <img src="img/joueurs/hikaru-nakamura.jpeg" alt="Hikaru Nakamura">
+                    <h3>Hikaru Nakamura</h3>
+                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
+                    <p class="fd-fide">FIDE ID : 2016192</p>
+                    <a href="fj-hikarunakamura.html" class="fd-bouton-profil">Voir profil</a>
                 </div>
 
-                <div class="fd-carte-joueur">
+                <div class="fd-carte-joueur" data-categorie="junior">
                     <img src="img/joueurs/xiao.jpg" alt="Xiao Tong">
                     <h3>Xiao Tong</h3>
                     <p class="fd-pays"><span class="fi fi-fr"></span> Chine</p>
@@ -264,7 +222,47 @@
                     <a href="fj-xiao.html" class="fd-bouton-profil">Voir profil</a>
                 </div>
 
-                <div class="fd-carte-joueur">
+                <div class="fd-carte-joueur" data-categorie="open">
+                    <img src="img/joueurs/nodirbek-abdusattorov.jpeg" alt="Nodirbek Abdusattorov">
+                    <h3>Nodirbek Abdusattorov</h3>
+                    <p class="fd-pays"><span class="fi fi-uz"></span> Ouzbékistan</p>
+                    <p class="fd-fide">FIDE ID : 14204118</p>
+                    <a href="fj-nodirbekabdusattorov.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur" data-categorie="junior">
+                    <img src="img/joueurs/gukesh.jpg" alt="Dommaraju Gukesh">
+                    <h3>Dommaraju Gukesh</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Inde</p>
+                    <p class="fd-fide">FIDE ID : 46616543</p>
+                    <a href="fj-gukeshd.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur" data-categorie="open">
+                    <img src="img/joueurs/fabiano-caruana.jpg" alt="Fabiano Caruana">
+                    <h3>Fabiano Caruana</h3>
+                    <p class="fd-pays"><span class="fi fi-us"></span> États-Unis</p>
+                    <p class="fd-fide">FIDE ID : 2020009</p>
+                    <a href="fj-fabianocaruana.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur" data-categorie="junior">
+                    <img src="img/joueurs/zemlyanskii.jpg" alt="Zemlyanskii Ivan">
+                    <h3>Zemlyanskii Ivan</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> Russie</p>
+                    <p class="fd-fide">FIDE ID : 24249971</p>
+                    <a href="fj-zemlyanskii.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur" data-categorie="open">
+                    <img src="img/joueurs/vincent-keymer.jpeg" alt="Vincent Keymer">
+                    <h3>Vincent Keymer</h3>
+                    <p class="fd-pays"><span class="fi fi-de"></span> Allemagne</p>
+                    <p class="fd-fide">FIDE ID : 12940690</p>
+                    <a href="fj-vincentkeymer.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur" data-categorie="junior">
                     <img src="img/joueurs/xue.jpg" alt="Xue Haowen">
                     <h3>Xue Haowen</h3>
                     <p class="fd-pays"><span class="fi fi-fr"></span> Chine</p>
@@ -272,7 +270,15 @@
                     <a href="fj-xue.html" class="fd-bouton-profil">Voir profil</a>
                 </div>
 
-                <div class="fd-carte-joueur">
+                <div class="fd-carte-joueur" data-categorie="open">
+                    <img src="img/joueurs/alireza-firouzja.jpg" alt="Alireza Firouzja">
+                    <h3>Alireza Firouzja</h3>
+                    <p class="fd-pays"><span class="fi fi-fr"></span> France</p>
+                    <p class="fd-fide">FIDE ID : 12573981</p>
+                    <a href="fj-firouzjaalireza.html" class="fd-bouton-profil">Voir profil</a>
+                </div>
+
+                <div class="fd-carte-joueur" data-categorie="junior">
                     <img src="img/joueurs/pingin.png" alt="Pingin Artem">
                     <h3>Pingin Artem</h3>
                     <p class="fd-pays"><span class="fi fi-fr"></span> Russie</p>
@@ -507,6 +513,24 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+    function filtrerJoueurs(categorie) {
+        const joueurs = document.querySelectorAll('.fd-carte-joueur');
+
+        joueurs.forEach(joueur => {
+            if (categorie === 'tous') {
+                joueur.style.display = "";
+            } else {
+                if (joueur.dataset.categorie === categorie) {
+                    joueur.style.display = "";
+                } else {
+                    joueur.style.display = "none";
+                }
+            }
+        });
+    }
+    </script>
 </body>
 
 </html>

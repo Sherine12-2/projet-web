@@ -5488,7 +5488,7 @@ label.fd-titre-section {
 }
 
 /* affichage joueurs */
-.fd-toggle-checkbox:checked + label + .fd-grille-joueurs {
+.fd-toggle-checkbox:checked + label ~ .fd-grille-joueurs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     max-width: 720px;
@@ -5840,5 +5840,24 @@ label.fd-titre-section:hover {
 
 h2.fj-hidden {
     display: none !important;
+}
+
+.fd-filtres {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fd-filtres button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #8c5c2b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fd-filtres button:hover {
+    background-color: #8c5c2b;
 }
 
