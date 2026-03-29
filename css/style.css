@@ -2177,6 +2177,12 @@ address {
     display: block;
     background: #ffffff;
 }
+/* On cible uniquement les sélecteurs de fichiers dans tes boîtes */
+.group-in input[type="file"] {
+    margin-top: 10px;    /* Crée de l'espace au-dessus de l'input */
+    padding-top: 8px;    /* Ajuste l'espace intérieur si nécessaire */
+    display: block;      /* Force l'input à aller à la ligne sous le label */
+}
 
 .contact-form textarea, .ip-textarea {
     height: 140px !important;
@@ -2292,9 +2298,15 @@ address {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #8b4513;
     display: inline-block;
+}
+.ip-contact-block address p {
+    margin-bottom: 8px;
+    margin-top: 0;
+    display: flex;         /* Pour bien aligner l'icône et le texte sur une seule ligne */
+    align-items: center;
 }
 
 /* 5. LISTES ET BOUTONS */
@@ -2339,7 +2351,7 @@ address {
     display: table;
     margin-left: auto;
     margin-right: auto;
-    transform: uppercase;
+    text-transform: uppercase;
 }
 .contact-info-box p {
     color: #8b4513;
@@ -2437,7 +2449,8 @@ address {
 }
 .radio-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    height: 10px;
     gap: 10px;
     cursor: pointer;
     font-size: 14px;
@@ -2467,6 +2480,7 @@ address {
 
 /* On aère les blocs d'adresses pour qu'ils ne soient pas collés */
 .contact-info .ci-address {
+    margin-top: 50px;
     margin-bottom: 30px; 
     padding: 20px;
     border: 1px solid #eee;
