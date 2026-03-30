@@ -412,15 +412,21 @@ address {
 }
 
 .header__nav .logo {
-	padding: 30px 0;
+	padding: 15px 0;
 }
 
 .header__nav .logo a {
 	display: inline-block;
 }
+.header__nav .logo a img {
+    max-width: 120px; 
+    height: auto;
+    display: block;   /* Évite les petits espaces vides sous l'image */
+}
 
 .header__nav .nav-menu {
-	text-align: right;
+	text-align: center;
+    padding-top: 40px;
 }
 
 .header__nav .nav-menu .main-menu {
@@ -430,8 +436,9 @@ address {
 .header__nav .nav-menu .main-menu li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 50px;
+	margin-right: 40px !important;
 	position: relative;
+    vertical-align: middle;
 }
 
 .header__nav .nav-menu .main-menu li .dropdown {
